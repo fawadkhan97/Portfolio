@@ -1,0 +1,47 @@
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  position: fixed;
+  width: 100%;
+z-index: 5;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    li {
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 50px;
+      }
+
+      a
+      {
+        font-size: 2.6rem;
+        color: rgb(255, 255, 255);
+
+        &:hover {
+          
+          color: rgb(233, 113, 0);
+          transition: color 0.6s;
+        }
+      }
+    }
+  }
+
+  a {
+    margin-left: 20px;
+    font-size: 2.5rem;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+
+

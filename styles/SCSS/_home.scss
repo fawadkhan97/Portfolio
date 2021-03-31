@@ -1,0 +1,55 @@
+
+    #particles-js {
+       
+        height: 100vh;
+        background-color: #000000;
+z-index: -1;    }
+
+#Home
+{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1%;
+
+color: #f9fd00;
+font-family: "Ubuntu",
+sans-serif;
+.Hero
+{
+    transform: translateY(50vh);
+}
+span.hero-text1
+{
+    font-size: 3rem;
+    text-align: center;
+}
+
+h1
+{
+    font-size: 8rem;
+    font-weight: 600;
+    
+}
+
+
+span.hero-text2 {
+    font-size: 3rem;
+    text-decoration: underline;
+
+    
+}
+.typed-cursor {
+    font-size: 3rem;
+    opacity: 0.7;
+    
+}
+
+#Web-dev {
+    display: none;
+   
+}
+
+}
+
