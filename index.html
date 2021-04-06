@@ -1,30 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./styles/css/style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <title>Fawad Portfolio</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-  <body>
-    <nav>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles/css/style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Exo:ital,wght@1,600&family=Roboto&display=swap"
+    rel="stylesheet" />
+  <title>Fawad Portfolio</title>
+</head>
+
+<body>
+  <header>
+    <nav id="myNav">
       <a href="#Home" class="logo">Fawad</a>
       <ul>
         <li><a href="#Home"> Home</a></li>
@@ -34,7 +28,9 @@
         <li><a href="#Contact"> Contact Me </a></li>
       </ul>
     </nav>
-    <main>
+  </header>
+  <main>
+    <div id="home-section ">
       <div id="particles-js">
         <section id="Home">
           <div class="Hero">
@@ -55,40 +51,65 @@
           </div>
         </section>
       </div>
-      <section id="About">
-        <h1>hello</h1>
-      </section>
-    </main>
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
+    </div>
 
-    <script src="./js/typed js/typed.js"></script>
-    <script src="/js/index.js"></script>
-    <script src="/js/Particle js/particles.js"></script>
-    <script src="/js/Particle js/app.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> -->
-    <!--   <script>
-      particlesJS(
-        "particles-js",
-        "/js/Particle js/particlesjs-config.json",
-        function () {
-          console.log("Doneeeeeeeeeeeeeeee");
-        }
-      );
-    </script> -->
-    });
-  </body>
+    <section id="About">
+      <h1 class="title">ABOUT ME</h1>
+
+      <div class="container about_content">
+        <div class="row justify-content-center">
+
+
+
+          <div class="col-md-5 mb-5 mb-sm-5 ">
+            <img src="./images/myimage1.png" alt="Fawad khan image" class="img-fluid">
+          </div>
+          <div class="col-md-7  align-self-center about_text ">
+            <h2> I am Fawad Khan. A student, Front-end Developer and a Freelancer</h2>
+            <p>
+              I am currently enroll in final year of Bachelor of Computer
+              Science program at Foundation University Rawalpindi.
+            </p>
+            <p>
+              i have been learning web development for about a year now. My aim is to become Full stack developer.
+            </p>
+            <p>
+              i am also a Freelancer and currently providing services in Front-end Development and Wordpress development
+            </p>
+
+          </div>
+
+        </div>
+    </section>
+    <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+        style="height: 100%; width: 100%;">
+        <path d="M-44.86,17.27 C141.92,227.45 349.60,-5.42 520.03,113.97 L500.00,150.00 L0.00,150.00 Z"
+          style="stroke: none; fill: rgb(20 20 36);"></path>
+      </svg></div>
+
+
+
+    <section id="skills">
+      <h1 class="skills-heading">
+        Skills Stack
+      </h1>
+
+      <div class="hr-line">
+
+      </div>
+    </section>
+
+  </main>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+  </script>
+  <script src="./js/typed js/typed.js"></script>
+  <script src="/js/index.js"></script>
+  <script src="/js/Particle js/particles.js"></script>
+  <script src="/js/Particle js/app.js"></script>
+</body>
+
 </html>

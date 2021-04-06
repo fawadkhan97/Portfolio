@@ -1,0 +1,60 @@
+#About {
+padding: 8rem 4rem;
+margin: auto;
+
+  h1.title {
+    font-size: 4.5rem;
+    font-weight: 600;
+   
+   position: relative;
+   text-align: center;
+padding-bottom: 25px;
+margin-bottom: 12rem;
+
+  &:before
+  {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+   }
+
+
+
+ &:after {
+    content: "who I am";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: #d6cf00;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+  
+   }
+  }
+
+  
+div.about_content
+{
+  div.about_text
+  {
+    
+  p
+  {
+    font-size: 1.8rem;
+    text-align:justify;
+margin-right: 50px;
+font-family: 'Roboto',sans-serif;
+line-height: 1.8;
+
+  }
+}
+}
+
+}

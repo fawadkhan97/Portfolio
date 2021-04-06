@@ -7,7 +7,31 @@
 
 html {
   font-family: 'Open Sans', sans-serif;
-  font-size: 10px;
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+h1, h2 {
+  font-family: 'Exo', sans-serif;
+}
+
+.flex-centering {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .margin-left-mini {
@@ -24,6 +48,10 @@ html {
 
 .margin-left-huge {
   margin-left: 8rem;
+}
+
+.margin-top-md {
+  margin-top: 3rem;
 }
 
 nav {
@@ -58,11 +86,11 @@ nav ul li:last-child {
 
 nav ul li a {
   font-size: 2.6rem;
-  color: white;
+  color: #f9fd00;
 }
 
 nav ul li a:hover {
-  color: #e97100;
+  color: #f88d00;
   -webkit-transition: color 0.6s;
   transition: color 0.6s;
 }
@@ -76,9 +104,13 @@ nav a:hover {
   text-decoration: none;
 }
 
+.nav-colored {
+  background-color: #05021d;
+}
+
 #particles-js {
   height: 100vh;
-  background-color: #000000;
+  background-color: #00030B;
   z-index: -1;
 }
 
@@ -124,5 +156,71 @@ nav a:hover {
 
 #Home #Web-dev {
   display: none;
+}
+
+#About {
+  padding: 8rem 4rem;
+  margin: auto;
+}
+
+#About h1.title {
+  font-size: 4.5rem;
+  font-weight: 600;
+  position: relative;
+  text-align: center;
+  padding-bottom: 25px;
+  margin-bottom: 12rem;
+}
+
+#About h1.title:before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 180px;
+  height: 3px;
+  background: black;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#About h1.title:after {
+  content: "who I am";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  font-size: 20px;
+  color: #d6cf00;
+  padding: 5px;
+  background: #fff;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#About div.about_content div.about_text p {
+  font-size: 1.8rem;
+  text-align: justify;
+  margin-right: 50px;
+  font-family: 'Roboto',sans-serif;
+  line-height: 1.8;
+}
+
+section#skills {
+  padding: 5rem;
+  padding-top: 1rem;
+  background-color: #141424;
+  height: 100vh;
+}
+
+section#skills h1 {
+  text-align: center;
+  font-size: 4rem;
+  color: white;
+}
+
+section#skills div.hr-line {
+  border-bottom: 4px solid #fffb01;
+  width: 250px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */

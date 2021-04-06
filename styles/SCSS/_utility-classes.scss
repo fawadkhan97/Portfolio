@@ -1,5 +1,13 @@
 
 
+.flex-centering
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 
 .margin-left-mini
 {
@@ -19,4 +27,9 @@
 {
        margin-left: 8rem;
 
+}
+
+.margin-top-md
+{
+    margin-top: 3rem;
 }
