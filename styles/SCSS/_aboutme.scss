@@ -61,6 +61,14 @@ line-height: 1.8;
 
 
 }
+svg#about-blob
+{
+  position: absolute;
+  transform:  scale( 0.2);
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+}
 
 svg#sw-js-blob-svg {
   position: absolute;
@@ -75,27 +83,27 @@ transform: scale(0.8);
 
 @keyframes move {
   0% {
-    transform: scale(0.5) translate(50px, -100px);
+    transform: scale(0.5) translate(50px, 50px);
   }
 
   38% {
-    transform: scale(0.8, 1) translate(52px, -90px) rotate(160deg);
+    transform: scale(0.8, 1) translate(52px, 90px) rotate(160deg);
   }
 
   40% {
-    transform: scale(0.8, 1) translate(53px, -80px) rotate(160deg);
+    transform: scale(0.8, 1) translate(53px, 80px) rotate(160deg);
   }
 
   78% {
-    transform: scale(0.9) translate(55px, -60px) rotate(-20deg);
+    transform: scale(0.9) translate(55px, 60px) rotate(-20deg);
   }
 
   80% {
-    transform: scale(0.7) translate(50px, -80px) rotate(-20deg);
+    transform: scale(0.7) translate(50px, 80px) rotate(-20deg);
   }
 
   100% {
-    transform: scale(1.2) translate(30px, -30px);
+    transform: scale(1.2) translate(30px, 30px);
   }
 }
 
