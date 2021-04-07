@@ -1,7 +1,8 @@
 #About {
 padding: 8rem 4rem;
 margin: auto;
-
+overflow: hidden;
+position: relative;
   h1.title {
     font-size: 4.5rem;
     font-weight: 600;
@@ -44,7 +45,7 @@ div.about_content
 {
   div.about_text
   {
-    
+   
   p
   {
     font-size: 1.8rem;
@@ -54,7 +55,51 @@ font-family: 'Roboto',sans-serif;
 line-height: 1.8;
 
   }
-}
+
+  
 }
 
+
 }
+
+svg#sw-js-blob-svg {
+  position: absolute;
+transform: scale(0.8);
+  z-index: -1;
+  animation: move 25s ease-in-out infinite reverse forwards;
+
+  transform-origin: 50% 50%;
+  top: 0;
+  left: 20%;
+}
+
+@keyframes move {
+  0% {
+    transform: scale(0.5) translate(50px, -100px);
+  }
+
+  38% {
+    transform: scale(0.8, 1) translate(52px, -90px) rotate(160deg);
+  }
+
+  40% {
+    transform: scale(0.8, 1) translate(53px, -80px) rotate(160deg);
+  }
+
+  78% {
+    transform: scale(0.9) translate(55px, -60px) rotate(-20deg);
+  }
+
+  80% {
+    transform: scale(0.7) translate(50px, -80px) rotate(-20deg);
+  }
+
+  100% {
+    transform: scale(1.2) translate(30px, -30px);
+  }
+}
+
+
+}
+
+
