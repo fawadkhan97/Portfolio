@@ -1,15 +1,16 @@
-section#skills
+section#Skills
 {
     padding: 5rem;
 padding-top: 1rem;
-    background-color: rgb(20, 20, 36);
-height: 100vh;
+background-color: rgb(20, 20, 36);
+min-height: 100vh;
 
-    h1
+    h1.skills-heading
     {
         text-align: center;
         font-size: 4rem;
         color: white;
+       
     }
 
     div.hr-line
@@ -17,8 +18,12 @@ height: 100vh;
         border-bottom: 4px solid rgb(255, 251, 1);
         width:250px;
         margin: 0 auto;
+        margin-bottom: 50px;
     }
 
+div.skills-stack
+{
+   
+}
 
-    
 }

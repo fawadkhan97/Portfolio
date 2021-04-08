@@ -18,6 +18,12 @@ h1, h2 {
   font-family: 'Exo', sans-serif;
 }
 
+div.hr-line {
+  border-bottom: 4px solid #fffb01;
+  width: 250px;
+  margin-bottom: 50px;
+}
+
 .flex-centering {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -34,6 +40,7 @@ h1, h2 {
           flex-direction: column;
 }
 
+/****************        Margin left        ******************/
 .margin-left-mini {
   margin-left: 1rem;
 }
@@ -50,8 +57,26 @@ h1, h2 {
   margin-left: 8rem;
 }
 
+/****************        Margin top        ******************/
 .margin-top-md {
   margin-top: 3rem;
+}
+
+/****************        Margin bottom        ******************/
+.margin-bottom-small {
+  margin-bottom: 2rem;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4rem;
+}
+
+.margin-bottom-large {
+  margin-bottom: 5rem;
+}
+
+.margin-bottom-huge {
+  margin-bottom: 8rem;
 }
 
 nav {
@@ -232,74 +257,75 @@ nav a:hover {
 
 @-webkit-keyframes move {
   0% {
-    -webkit-transform: scale(0.5) translate(50px, 50px);
-            transform: scale(0.5) translate(50px, 50px);
+    -webkit-transform: scale(0.5) translate(-20px, -50px);
+            transform: scale(0.5) translate(-20px, -50px);
   }
   38% {
-    -webkit-transform: scale(0.8, 1) translate(52px, 90px) rotate(160deg);
-            transform: scale(0.8, 1) translate(52px, 90px) rotate(160deg);
+    -webkit-transform: scale(0.8, 1) translate(-23px, -90px) rotate(160deg);
+            transform: scale(0.8, 1) translate(-23px, -90px) rotate(160deg);
   }
   40% {
-    -webkit-transform: scale(0.8, 1) translate(53px, 80px) rotate(160deg);
-            transform: scale(0.8, 1) translate(53px, 80px) rotate(160deg);
+    -webkit-transform: scale(0.8, 1) translate(-25px, -80px) rotate(160deg);
+            transform: scale(0.8, 1) translate(-25px, -80px) rotate(160deg);
   }
   78% {
-    -webkit-transform: scale(0.9) translate(55px, 60px) rotate(-20deg);
-            transform: scale(0.9) translate(55px, 60px) rotate(-20deg);
+    -webkit-transform: scale(0.9) translate(-27px, -60px) rotate(-20deg);
+            transform: scale(0.9) translate(-27px, -60px) rotate(-20deg);
   }
   80% {
-    -webkit-transform: scale(0.7) translate(50px, 80px) rotate(-20deg);
-            transform: scale(0.7) translate(50px, 80px) rotate(-20deg);
+    -webkit-transform: scale(0.7) translate(22px, -80px) rotate(-20deg);
+            transform: scale(0.7) translate(22px, -80px) rotate(-20deg);
   }
   100% {
-    -webkit-transform: scale(1.2) translate(30px, 30px);
-            transform: scale(1.2) translate(30px, 30px);
+    -webkit-transform: scale(0.5) translate(20px, -30px);
+            transform: scale(0.5) translate(20px, -30px);
   }
 }
 
 @keyframes move {
   0% {
-    -webkit-transform: scale(0.5) translate(50px, 50px);
-            transform: scale(0.5) translate(50px, 50px);
+    -webkit-transform: scale(0.5) translate(-20px, -50px);
+            transform: scale(0.5) translate(-20px, -50px);
   }
   38% {
-    -webkit-transform: scale(0.8, 1) translate(52px, 90px) rotate(160deg);
-            transform: scale(0.8, 1) translate(52px, 90px) rotate(160deg);
+    -webkit-transform: scale(0.8, 1) translate(-23px, -90px) rotate(160deg);
+            transform: scale(0.8, 1) translate(-23px, -90px) rotate(160deg);
   }
   40% {
-    -webkit-transform: scale(0.8, 1) translate(53px, 80px) rotate(160deg);
-            transform: scale(0.8, 1) translate(53px, 80px) rotate(160deg);
+    -webkit-transform: scale(0.8, 1) translate(-25px, -80px) rotate(160deg);
+            transform: scale(0.8, 1) translate(-25px, -80px) rotate(160deg);
   }
   78% {
-    -webkit-transform: scale(0.9) translate(55px, 60px) rotate(-20deg);
-            transform: scale(0.9) translate(55px, 60px) rotate(-20deg);
+    -webkit-transform: scale(0.9) translate(-27px, -60px) rotate(-20deg);
+            transform: scale(0.9) translate(-27px, -60px) rotate(-20deg);
   }
   80% {
-    -webkit-transform: scale(0.7) translate(50px, 80px) rotate(-20deg);
-            transform: scale(0.7) translate(50px, 80px) rotate(-20deg);
+    -webkit-transform: scale(0.7) translate(22px, -80px) rotate(-20deg);
+            transform: scale(0.7) translate(22px, -80px) rotate(-20deg);
   }
   100% {
-    -webkit-transform: scale(1.2) translate(30px, 30px);
-            transform: scale(1.2) translate(30px, 30px);
+    -webkit-transform: scale(0.5) translate(20px, -30px);
+            transform: scale(0.5) translate(20px, -30px);
   }
 }
 
-section#skills {
+section#Skills {
   padding: 5rem;
   padding-top: 1rem;
   background-color: #141424;
-  height: 100vh;
+  min-height: 100vh;
 }
 
-section#skills h1 {
+section#Skills h1.skills-heading {
   text-align: center;
   font-size: 4rem;
   color: white;
 }
 
-section#skills div.hr-line {
+section#Skills div.hr-line {
   border-bottom: 4px solid #fffb01;
   width: 250px;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 /*# sourceMappingURL=style.css.map */

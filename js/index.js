@@ -16,3 +16,10 @@ window.onscroll = () => {
     navbar.classList.remove("nav-colored");
   }
 };
+
+new Splide(".splide", {
+  type: "loop",
+  perPage: 3,
+  speed: 1500,
+  gap: "50px",
+}).mount();
