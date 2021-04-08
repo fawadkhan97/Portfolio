@@ -107,7 +107,73 @@ transform: scale(0.8);
   }
 }
 
+div.skills-set
+{
+
+  i
+  {
+  &.fa-html5
+  {
+    color: #DD4B25;
+
+    &:hover,
+    &:focus,
+    &:active 
+    {
+      color: #ff572d;
+    }
+  }
+
+  &.fa-css3-alt {
+    color: #3072be;
+
+    &:hover,
+    &:focus,
+    &:active  {
+      color: #2d8dfa;
+    }
+  }
+ &.fa-js-square {
+   color: #eaee1c;
+
+   &:hover,
+   &:focus,
+   &:active  {
+     color: #fbff00;
+   }
+ }
+ &.fa-react {
+   color: #1873c9;
+
+   &:hover,
+   &:focus,
+   &:active  {
+     color: #0084ff;
+   }
+ }
+ &.fa-sass {
+   color: #e22e2e;
+
+   &:hover,
+   &:focus,
+   &:active  {
+     color: #ff0b0b;
+   }
+ }
+ &.fa-wordpress {
+   color: #0774a7;
+
+   &:hover,
+   &:focus,
+   &:active  {
+     color: #0b8dd8;
+   }
+ }
+ 
+ }
 
 }
+}
+
 
 
