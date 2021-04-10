@@ -1,0 +1,43 @@
+section#Services {
+  padding: 5rem;
+  padding-top: 1rem;
+  background-color: rgb(20, 20, 36);
+  min-height: 100vh;
+  h1.services-heading {
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+  }
+
+  div.hr-line {
+    border-bottom: 4px solid rgb(255, 251, 1);
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  div.icon-container {
+    width: 10rem;
+    height: 10rem;
+    border: 3px double #fff;
+    border-radius: 20%;
+    margin-bottom: 2rem;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  div.cards {
+    background-color: #de8347;
+    color: inherit;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    padding: 40px;
+  }
+}

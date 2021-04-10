@@ -23,12 +23,3 @@ new Splide(".splide", {
   speed: 1500,
   gap: "50px",
 }).mount();
-
-let cardhoverstate = document.getElementsByClassName("card");
-console.log(cardhoverstate);
-for (let card of cardhoverstate) {
-  console.log(card);
-  card.onmouseout = function () {
-    card.style.backgroundColor = "";
-  };
-}

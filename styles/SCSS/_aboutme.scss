@@ -95,14 +95,18 @@
   }
 
   div.skills-set {
-    div.card {
+    div.cards {
       border: none;
       height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
-      padding: 10px;
+      padding: 15px;
       border-radius: 18px;
       background: #fdfdfd;
       box-shadow: 14px 14px 32px #d6d6d6, -14px -14px 36px #ffffff;
+      margin: 0 auto;
 
       &:hover,
       &:active,

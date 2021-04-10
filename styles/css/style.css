@@ -315,91 +315,141 @@ nav a:hover {
   }
 }
 
-#About div.skills-set div.card {
+#About div.skills-set div.cards {
   border: none;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 10px;
+  padding: 15px;
   border-radius: 18px;
   background: #fdfdfd;
   -webkit-box-shadow: 14px 14px 32px #d6d6d6, -14px -14px 36px #ffffff;
           box-shadow: 14px 14px 32px #d6d6d6, -14px -14px 36px #ffffff;
+  margin: 0 auto;
 }
 
-#About div.skills-set div.card:hover, #About div.skills-set div.card:active, #About div.skills-set div.card:focus {
+#About div.skills-set div.cards:hover, #About div.skills-set div.cards:active, #About div.skills-set div.cards:focus {
   -webkit-transform: scale(1.16);
           transform: scale(1.16);
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
 }
 
-#About div.skills-set div.card i.fa-html5 {
+#About div.skills-set div.cards i.fa-html5 {
   color: #dd4b25;
 }
 
-#About div.skills-set div.card i.fa-html5:hover, #About div.skills-set div.card i.fa-html5:focus, #About div.skills-set div.card i.fa-html5:active {
+#About div.skills-set div.cards i.fa-html5:hover, #About div.skills-set div.cards i.fa-html5:focus, #About div.skills-set div.cards i.fa-html5:active {
   color: #ff572d;
 }
 
-#About div.skills-set div.card i.fa-css3-alt {
+#About div.skills-set div.cards i.fa-css3-alt {
   color: #3072be;
 }
 
-#About div.skills-set div.card i.fa-css3-alt:hover, #About div.skills-set div.card i.fa-css3-alt:focus, #About div.skills-set div.card i.fa-css3-alt:active {
+#About div.skills-set div.cards i.fa-css3-alt:hover, #About div.skills-set div.cards i.fa-css3-alt:focus, #About div.skills-set div.cards i.fa-css3-alt:active {
   color: #2d8dfa;
 }
 
-#About div.skills-set div.card i.fa-js-square {
+#About div.skills-set div.cards i.fa-js-square {
   color: #eaee1c;
 }
 
-#About div.skills-set div.card i.fa-js-square:hover, #About div.skills-set div.card i.fa-js-square:focus, #About div.skills-set div.card i.fa-js-square:active {
+#About div.skills-set div.cards i.fa-js-square:hover, #About div.skills-set div.cards i.fa-js-square:focus, #About div.skills-set div.cards i.fa-js-square:active {
   color: #fbff00;
 }
 
-#About div.skills-set div.card i.fa-react {
+#About div.skills-set div.cards i.fa-react {
   color: #1873c9;
 }
 
-#About div.skills-set div.card i.fa-react:hover, #About div.skills-set div.card i.fa-react:focus, #About div.skills-set div.card i.fa-react:active {
+#About div.skills-set div.cards i.fa-react:hover, #About div.skills-set div.cards i.fa-react:focus, #About div.skills-set div.cards i.fa-react:active {
   color: #0084ff;
 }
 
-#About div.skills-set div.card i.fa-sass {
+#About div.skills-set div.cards i.fa-sass {
   color: #e22e2e;
 }
 
-#About div.skills-set div.card i.fa-sass:hover, #About div.skills-set div.card i.fa-sass:focus, #About div.skills-set div.card i.fa-sass:active {
+#About div.skills-set div.cards i.fa-sass:hover, #About div.skills-set div.cards i.fa-sass:focus, #About div.skills-set div.cards i.fa-sass:active {
   color: #ff0b0b;
 }
 
-#About div.skills-set div.card i.fa-wordpress {
+#About div.skills-set div.cards i.fa-wordpress {
   color: #0774a7;
 }
 
-#About div.skills-set div.card i.fa-wordpress:hover, #About div.skills-set div.card i.fa-wordpress:focus, #About div.skills-set div.card i.fa-wordpress:active {
+#About div.skills-set div.cards i.fa-wordpress:hover, #About div.skills-set div.cards i.fa-wordpress:focus, #About div.skills-set div.cards i.fa-wordpress:active {
   color: #0b8dd8;
 }
 
-section#Skills {
+section#Services {
   padding: 5rem;
   padding-top: 1rem;
   background-color: #141424;
   min-height: 100vh;
 }
 
-section#Skills h1.skills-heading {
+section#Services h1.services-heading {
   text-align: center;
   font-size: 4rem;
   color: white;
 }
 
-section#Skills div.hr-line {
+section#Services div.hr-line {
   border-bottom: 4px solid #fffb01;
   width: 250px;
   margin: 0 auto;
   margin-bottom: 50px;
+}
+
+section#Services div.icon-container {
+  width: 10rem;
+  height: 10rem;
+  border: 3px double #fff;
+  border-radius: 20%;
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section#Services div.cards {
+  background-color: #de8347;
+  color: inherit;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px;
 }
 /*# sourceMappingURL=style.css.map */
