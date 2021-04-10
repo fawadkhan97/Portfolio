@@ -1,196 +1,177 @@
 #About {
+  margin: auto;
+  overflow: hidden;
+  position: relative;
 
-margin: auto;
-overflow: hidden;
-position: relative;
   h1.title {
     font-size: 4.5rem;
     font-weight: 600;
-   
-   position: relative;
-   text-align: center;
-padding-bottom: 25px;
-margin-bottom: 9rem;
-margin-top: 6rem;
 
-  &:before
-  {
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    width: 180px;
-    height: 3px;
-    background: black;
-    transform: translateX(-50%);
-   }
+    position: relative;
+    text-align: center;
+    padding-bottom: 25px;
+    margin-bottom: 9rem;
+    margin-top: 6rem;
 
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      width: 180px;
+      height: 3px;
+      background: black;
+      transform: translateX(-50%);
+    }
 
-
- &:after {
-    content: "who I am";
-    position: absolute;
-    bottom: -12px;
-    left: 50%;
-    font-size: 20px;
-    color: #d6cf00;
-    padding: 5px;
-    background: #fff;
-    transform: translateX(-50%);
-  
-   }
-  }
-
-  
-div.about_content
-{
-  div.about_text
-  {
-   
-  p
-  {
-    font-size: 1.8rem;
-    text-align:justify;
-margin-right: 50px;
-font-family: 'Roboto',sans-serif;
-line-height: 1.8;
-
-  }
-
-  
-}
-
-
-}
-svg#about-blob
-{
-  position: absolute;
-  transform:  scale( 0.2);
-  bottom: 0;
-  left: 0;
-  z-index: -2;
-}
-
-svg#sw-js-blob-svg {
-  position: absolute;
-transform: scale(0.8);
-  z-index: -1;
-  animation: move 25s ease-in-out infinite reverse forwards;
-
-  transform-origin: 50% 50%;
-  top: 0;
-  left: 20%;
-}
-
-@keyframes move {
-  0% {
-    transform: scale(0.5) translate(-20px, -50px);
-  }
-
-  38% {
-    transform: scale(0.8, 1) translate(-23px, -90px) rotate(160deg);
-  }
-
-  40% {
-    transform: scale(0.8, 1) translate(-25px, -80px) rotate(160deg);
-  }
-
-  78% {
-    transform: scale(0.9) translate(-27px, -60px) rotate(-20deg);
-  }
-
-  80% {
-    transform: scale(0.7) translate(22px, -80px) rotate(-20deg);
-  }
-
-  100% {
-    transform: scale(0.5) translate(20px, -30px);
-  }
-}
-
-div.skills-set
-{
-div.card
-{
-  border: none;
-  height: 100%;
-  justify-content: center;
-  padding: 10px;
-  border-radius: 18px;
-  background: #ffffff;
-  box-shadow: 14px 14px 36px #efefef,
-  -14px -14px 36px #ffffff;
-&:hover,&:active,&:focus
-{
-  margin-right: 10px;
-  margin-left: 10px;
-transform: scale(1.2);
-transition: transform 0.7s;
-}
-  i
-  {
-  &.fa-html5
-  {
-    color: #DD4B25;
-
-    &:hover,
-    &:focus,
-    &:active 
-    {
-      color: #ff572d;
+    &:after {
+      content: "who I am";
+      position: absolute;
+      bottom: -12px;
+      left: 50%;
+      font-size: 20px;
+      color: #d6cf00;
+      padding: 5px;
+      background: #fff;
+      transform: translateX(-50%);
     }
   }
 
-  &.fa-css3-alt {
-    color: #3072be;
-
-    &:hover,
-    &:focus,
-    &:active  {
-      color: #2d8dfa;
+  div.about_content {
+    div.about_text {
+      p {
+        font-size: 1.8rem;
+        text-align: justify;
+        margin-right: 50px;
+        font-family: "Roboto", sans-serif;
+        line-height: 1.8;
+      }
     }
   }
- &.fa-js-square {
-   color: #eaee1c;
 
-   &:hover,
-   &:focus,
-   &:active  {
-     color: #fbff00;
-   }
- }
- &.fa-react {
-   color: #1873c9;
+  svg#about-blob {
+    position: absolute;
+    transform: scale(0.2);
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+  }
 
-   &:hover,
-   &:focus,
-   &:active  {
-     color: #0084ff;
-   }
- }
- &.fa-sass {
-   color: #e22e2e;
+  svg#sw-js-blob-svg {
+    position: absolute;
+    transform: scale(0.8);
+    z-index: -1;
+    animation: move 25s ease-in-out infinite reverse forwards;
 
-   &:hover,
-   &:focus,
-   &:active  {
-     color: #ff0b0b;
-   }
- }
- &.fa-wordpress {
-   color: #0774a7;
+    transform-origin: 50% 50%;
+    top: 0;
+    left: 20%;
+  }
 
-   &:hover,
-   &:focus,
-   &:active  {
-     color: #0b8dd8;
-   }
- }
- 
- }
+  @keyframes move {
+    0% {
+      transform: scale(0.5) translate(-20px, -50px);
+    }
+
+    38% {
+      transform: scale(0.8, 1) translate(-23px, -90px) rotate(160deg);
+    }
+
+    40% {
+      transform: scale(0.8, 1) translate(-25px, -80px) rotate(160deg);
+    }
+
+    78% {
+      transform: scale(0.9) translate(-27px, -60px) rotate(-20deg);
+    }
+
+    80% {
+      transform: scale(0.7) translate(22px, -80px) rotate(-20deg);
+    }
+
+    100% {
+      transform: scale(0.5) translate(20px, -30px);
+    }
+  }
+
+  div.skills-set {
+    div.card {
+      border: none;
+      height: 100%;
+      justify-content: center;
+      padding: 10px;
+      border-radius: 18px;
+      background: #fdfdfd;
+      box-shadow: 14px 14px 32px #d6d6d6, -14px -14px 36px #ffffff;
+
+      &:hover,
+      &:active,
+      &:focus {
+        transform: scale(1.16);
+        transition: all 0.8s;
+      }
+
+      i {
+        &.fa-html5 {
+          color: #dd4b25;
+
+          &:hover,
+          &:focus,
+          &:active {
+            color: #ff572d;
+          }
+        }
+
+        &.fa-css3-alt {
+          color: #3072be;
+
+          &:hover,
+          &:focus,
+          &:active {
+            color: #2d8dfa;
+          }
+        }
+
+        &.fa-js-square {
+          color: #eaee1c;
+
+          &:hover,
+          &:focus,
+          &:active {
+            color: #fbff00;
+          }
+        }
+
+        &.fa-react {
+          color: #1873c9;
+
+          &:hover,
+          &:focus,
+          &:active {
+            color: #0084ff;
+          }
+        }
+
+        &.fa-sass {
+          color: #e22e2e;
+
+          &:hover,
+          &:focus,
+          &:active {
+            color: #ff0b0b;
+          }
+        }
+
+        &.fa-wordpress {
+          color: #0774a7;
+
+          &:hover,
+          &:focus,
+          &:active {
+            color: #0b8dd8;
+          }
+        }
+      }
+    }
+  }
 }
-}
-}
-
-
-

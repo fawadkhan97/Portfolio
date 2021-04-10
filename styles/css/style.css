@@ -40,6 +40,7 @@ div.hr-line {
           flex-direction: column;
 }
 
+/************************margins*********************/
 /****************        Margin left        ******************/
 .margin-left-mini {
   margin-left: 1rem;
@@ -77,6 +78,11 @@ div.hr-line {
 
 .margin-bottom-huge {
   margin-bottom: 8rem;
+}
+
+/*****************************padding**********************************/
+.padding-large {
+  padding: 30px;
 }
 
 nav {
@@ -230,7 +236,7 @@ nav a:hover {
   font-size: 1.8rem;
   text-align: justify;
   margin-right: 50px;
-  font-family: 'Roboto',sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.8;
 }
 
@@ -317,24 +323,20 @@ nav a:hover {
           justify-content: center;
   padding: 10px;
   border-radius: 18px;
-  background: #ffffff;
-  -webkit-box-shadow: 14px 14px 36px #efefef, -14px -14px 36px #ffffff;
-          box-shadow: 14px 14px 36px #efefef, -14px -14px 36px #ffffff;
+  background: #fdfdfd;
+  -webkit-box-shadow: 14px 14px 32px #d6d6d6, -14px -14px 36px #ffffff;
+          box-shadow: 14px 14px 32px #d6d6d6, -14px -14px 36px #ffffff;
 }
 
 #About div.skills-set div.card:hover, #About div.skills-set div.card:active, #About div.skills-set div.card:focus {
-  margin-right: 10px;
-  margin-left: 10px;
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: -webkit-transform 0.7s;
-  transition: -webkit-transform 0.7s;
-  transition: transform 0.7s;
-  transition: transform 0.7s, -webkit-transform 0.7s;
+  -webkit-transform: scale(1.16);
+          transform: scale(1.16);
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
 }
 
 #About div.skills-set div.card i.fa-html5 {
-  color: #DD4B25;
+  color: #dd4b25;
 }
 
 #About div.skills-set div.card i.fa-html5:hover, #About div.skills-set div.card i.fa-html5:focus, #About div.skills-set div.card i.fa-html5:active {
