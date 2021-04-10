@@ -442,4 +442,13 @@ section#Services div.cards {
   background-color: #de8347;
   color: inherit;
 }
+
+section#Services div.cards:hover, section#Services div.cards:active, section#Services div.cards:focus {
+  color: #313157;
+  background-color: #ff9954;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
 /*# sourceMappingURL=style.css.map */

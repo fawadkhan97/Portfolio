@@ -31,5 +31,14 @@ section#Services {
   div.cards {
     background-color: #de8347;
     color: inherit;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: #313157;
+      background-color: #ff9954;
+      transform: scale(1.1);
+      transition: all 0.8s;
+    }
   }
 }
