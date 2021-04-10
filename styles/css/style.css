@@ -186,7 +186,6 @@ nav a:hover {
 }
 
 #About {
-  padding: 8rem 4rem;
   margin: auto;
   overflow: hidden;
   position: relative;
@@ -198,7 +197,8 @@ nav a:hover {
   position: relative;
   text-align: center;
   padding-bottom: 25px;
-  margin-bottom: 12rem;
+  margin-bottom: 9rem;
+  margin-top: 6rem;
 }
 
 #About h1.title:before {
@@ -309,51 +309,75 @@ nav a:hover {
   }
 }
 
-#About div.skills-set i.fa-html5 {
+#About div.skills-set div.card {
+  border: none;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px;
+  border-radius: 18px;
+  background: #ffffff;
+  -webkit-box-shadow: 14px 14px 36px #efefef, -14px -14px 36px #ffffff;
+          box-shadow: 14px 14px 36px #efefef, -14px -14px 36px #ffffff;
+}
+
+#About div.skills-set div.card:hover, #About div.skills-set div.card:active, #About div.skills-set div.card:focus {
+  margin-right: 10px;
+  margin-left: 10px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: -webkit-transform 0.7s;
+  transition: -webkit-transform 0.7s;
+  transition: transform 0.7s;
+  transition: transform 0.7s, -webkit-transform 0.7s;
+}
+
+#About div.skills-set div.card i.fa-html5 {
   color: #DD4B25;
 }
 
-#About div.skills-set i.fa-html5:hover, #About div.skills-set i.fa-html5:focus, #About div.skills-set i.fa-html5:active {
+#About div.skills-set div.card i.fa-html5:hover, #About div.skills-set div.card i.fa-html5:focus, #About div.skills-set div.card i.fa-html5:active {
   color: #ff572d;
 }
 
-#About div.skills-set i.fa-css3-alt {
+#About div.skills-set div.card i.fa-css3-alt {
   color: #3072be;
 }
 
-#About div.skills-set i.fa-css3-alt:hover, #About div.skills-set i.fa-css3-alt:focus, #About div.skills-set i.fa-css3-alt:active {
+#About div.skills-set div.card i.fa-css3-alt:hover, #About div.skills-set div.card i.fa-css3-alt:focus, #About div.skills-set div.card i.fa-css3-alt:active {
   color: #2d8dfa;
 }
 
-#About div.skills-set i.fa-js-square {
+#About div.skills-set div.card i.fa-js-square {
   color: #eaee1c;
 }
 
-#About div.skills-set i.fa-js-square:hover, #About div.skills-set i.fa-js-square:focus, #About div.skills-set i.fa-js-square:active {
+#About div.skills-set div.card i.fa-js-square:hover, #About div.skills-set div.card i.fa-js-square:focus, #About div.skills-set div.card i.fa-js-square:active {
   color: #fbff00;
 }
 
-#About div.skills-set i.fa-react {
+#About div.skills-set div.card i.fa-react {
   color: #1873c9;
 }
 
-#About div.skills-set i.fa-react:hover, #About div.skills-set i.fa-react:focus, #About div.skills-set i.fa-react:active {
+#About div.skills-set div.card i.fa-react:hover, #About div.skills-set div.card i.fa-react:focus, #About div.skills-set div.card i.fa-react:active {
   color: #0084ff;
 }
 
-#About div.skills-set i.fa-sass {
+#About div.skills-set div.card i.fa-sass {
   color: #e22e2e;
 }
 
-#About div.skills-set i.fa-sass:hover, #About div.skills-set i.fa-sass:focus, #About div.skills-set i.fa-sass:active {
+#About div.skills-set div.card i.fa-sass:hover, #About div.skills-set div.card i.fa-sass:focus, #About div.skills-set div.card i.fa-sass:active {
   color: #ff0b0b;
 }
 
-#About div.skills-set i.fa-wordpress {
+#About div.skills-set div.card i.fa-wordpress {
   color: #0774a7;
 }
 
-#About div.skills-set i.fa-wordpress:hover, #About div.skills-set i.fa-wordpress:focus, #About div.skills-set i.fa-wordpress:active {
+#About div.skills-set div.card i.fa-wordpress:hover, #About div.skills-set div.card i.fa-wordpress:focus, #About div.skills-set div.card i.fa-wordpress:active {
   color: #0b8dd8;
 }
 
