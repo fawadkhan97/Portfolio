@@ -1,48 +1,29 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.cards {
-
-    height: 40vh;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.card1 {
+section#Projects {
+  height: 100vh;
+  .cards {
+    height: 95%;
+  }
+  .card1 {
     background-color: yellow;
-}
+  }
 
-.card2 {
+  .card2 {
     background-color: red;
-}
+  }
 
-.card3 {
+  .card3 {
     background-color: palevioletred;
-}
+  }
 
-.card4 {
+  .card4 {
     background-color: violet;
-}
+  }
 
-.card5 {
+  .card5 {
     background-color: rgb(130, 238, 229);
-}
+  }
 
-.card6 {
+  .card6 {
     background-color: rgb(59, 4, 59);
+  }
 }
-

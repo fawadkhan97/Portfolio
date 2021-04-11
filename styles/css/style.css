@@ -52,6 +52,22 @@ div.cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-centering {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -116,7 +132,7 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 30px 0;
+  padding: 15px 0;
   position: fixed;
   width: 100%;
   z-index: 5;
@@ -140,7 +156,7 @@ nav ul li:last-child {
 }
 
 nav ul li a {
-  font-size: 2.6rem;
+  font-size: 2.3rem;
   color: #f9fd00;
 }
 
@@ -451,5 +467,37 @@ section#Services div.cards:hover, section#Services div.cards:active, section#Ser
           transform: scale(1.1);
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
+}
+
+section#Projects {
+  height: 100vh;
+}
+
+section#Projects .cards {
+  height: 95%;
+}
+
+section#Projects .card1 {
+  background-color: yellow;
+}
+
+section#Projects .card2 {
+  background-color: red;
+}
+
+section#Projects .card3 {
+  background-color: palevioletred;
+}
+
+section#Projects .card4 {
+  background-color: violet;
+}
+
+section#Projects .card5 {
+  background-color: #82eee5;
+}
+
+section#Projects .card6 {
+  background-color: #3b043b;
 }
 /*# sourceMappingURL=style.css.map */

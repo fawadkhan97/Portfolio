@@ -1,9 +1,7 @@
-
-
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 30px 0;
+  padding: 15px 0;
   position: fixed;
   width: 100%;
   z-index: 5;
@@ -20,13 +18,11 @@ nav {
         margin-right: 50px;
       }
 
-      a
-      {
-        font-size: 2.6rem;
+      a {
+        font-size: 2.3rem;
         color: #f9fd00;
 
         &:hover {
-          
           color: #f88d00;
           transition: color 0.6s;
         }
@@ -43,10 +39,7 @@ nav {
   }
 }
 
-
-
-.nav-colored
-{
-background-color: #030019;
-transition: all 1s;
+.nav-colored {
+  background-color: #030019;
+  transition: all 1s;
 }

@@ -19,7 +19,19 @@ window.onscroll = () => {
 
 new Splide(".splide", {
   type: "loop",
-  perPage: 3,
+  perPage: 2,
   speed: 1500,
   gap: "50px",
+  perMove: 1,
+  padding: "10px",
+  easing: "ease",
+  lazyLoad: "sequential",
+  height: "80vh",
+  breakpoints: {
+    768: {
+      perPage: 1,
+      height: "40vh",
+      padding: "50px",
+    },
+  },
 }).mount();

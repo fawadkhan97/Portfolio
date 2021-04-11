@@ -38,3 +38,10 @@ div.cards {
   text-align: center;
   padding: 40px 10px;
 }
+
+.flex-centering {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
