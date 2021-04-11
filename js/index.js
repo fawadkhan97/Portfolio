@@ -30,12 +30,12 @@ new Splide(".splide", {
   breakpoints: {
     768: {
       perPage: 1,
-      height: "70vh",
+      height: "50vh",
       padding: "50px",
     },
     500: {
       perPage: 1,
-      height: "80vh",
+      height: "35vh",
       padding: "10px",
     },
   },

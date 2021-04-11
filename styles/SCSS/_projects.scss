@@ -2,8 +2,10 @@ section#Projects {
   height: 100vh;
   .cards {
     height: 95%;
-    background-color: white;
     padding: 0;
+    color: white;
+    position: relative;
+    background-color: white;
   }
   .bg-color {
     transition: 0.5s ease;
@@ -16,20 +18,26 @@ section#Projects {
 
     h2 {
       transform: translateY(-100px);
-      opacity: 1;
+      opacity: 0;
     }
     p {
       font-size: 2rem;
-      color: white;
       width: 100%;
     }
   }
-  .card1 {
-    position: relative;
-
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5,
+  .card6 {
     &:hover {
-      background-image: rgb(34, 126, 207);
+      background: linear-gradient(to right, #0f2027d4, #203a43ed, #2c5364ed);
+      transition: all 1s linear;
 
+      img {
+        z-index: -1;
+      }
       h2 {
         transform: translateY(0);
         opacity: 1;
@@ -42,18 +50,14 @@ section#Projects {
   }
 
   .card3 {
-    background-color: palevioletred;
   }
 
   .card4 {
-    background-color: violet;
   }
 
   .card5 {
-    background-color: rgb(130, 238, 229);
   }
 
   .card6 {
-    background-color: rgb(59, 4, 59);
   }
 }

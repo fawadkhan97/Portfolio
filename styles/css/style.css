@@ -422,7 +422,7 @@ section#Services {
   padding: 5rem;
   padding-top: 1rem;
   background-color: #141424;
-  min-height: 100vh;
+  min-height: 60vh;
 }
 
 section#Services h1.services-heading {
@@ -475,8 +475,10 @@ section#Projects {
 
 section#Projects .cards {
   height: 95%;
-  background-color: white;
   padding: 0;
+  color: white;
+  position: relative;
+  background-color: white;
 }
 
 section#Projects .bg-color {
@@ -494,44 +496,45 @@ section#Projects .bg-color {
 section#Projects .bg-color h2 {
   -webkit-transform: translateY(-100px);
           transform: translateY(-100px);
-  opacity: 1;
+  opacity: 0;
 }
 
 section#Projects .bg-color p {
   font-size: 2rem;
-  color: white;
   width: 100%;
 }
 
-section#Projects .card1 {
-  position: relative;
+section#Projects .card1:hover,
+section#Projects .card2:hover,
+section#Projects .card3:hover,
+section#Projects .card4:hover,
+section#Projects .card5:hover,
+section#Projects .card6:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#0f2027d4), color-stop(#203a43ed), to(#2c5364ed));
+  background: linear-gradient(to right, #0f2027d4, #203a43ed, #2c5364ed);
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
 }
 
-section#Projects .card1:hover {
-  background-image: #227ecf;
+section#Projects .card1:hover img,
+section#Projects .card2:hover img,
+section#Projects .card3:hover img,
+section#Projects .card4:hover img,
+section#Projects .card5:hover img,
+section#Projects .card6:hover img {
+  z-index: -1;
 }
 
-section#Projects .card1:hover h2 {
+section#Projects .card1:hover h2,
+section#Projects .card2:hover h2,
+section#Projects .card3:hover h2,
+section#Projects .card4:hover h2,
+section#Projects .card5:hover h2,
+section#Projects .card6:hover h2 {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   opacity: 1;
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
-}
-
-section#Projects .card3 {
-  background-color: palevioletred;
-}
-
-section#Projects .card4 {
-  background-color: violet;
-}
-
-section#Projects .card5 {
-  background-color: #82eee5;
-}
-
-section#Projects .card6 {
-  background-color: #3b043b;
 }
 /*# sourceMappingURL=style.css.map */
