@@ -47,7 +47,6 @@ section#Projects {
   .card6 {
     &:hover {
       background: #083346ed;
-      transition: all 1s;
       img {
         z-index: -1;
       }
@@ -56,22 +55,23 @@ section#Projects {
         transform: translateY(0);
         opacity: 1;
         transition: all 0.8s;
+        transition-delay: 0.3s;
       }
     }
-  }
 
-  .card2 {
-  }
+    .card2 {
+    }
 
-  .card3 {
-  }
+    .card3 {
+    }
 
-  .card4 {
-  }
+    .card4 {
+    }
 
-  .card5 {
-  }
+    .card5 {
+    }
 
-  .card6 {
+    .card6 {
+    }
   }
 }
