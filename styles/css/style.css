@@ -504,16 +504,26 @@ section#Projects .bg-color p {
   width: 100%;
 }
 
+section#Projects .card1,
+section#Projects .card2,
+section#Projects .card3,
+section#Projects .card4,
+section#Projects .card5,
+section#Projects .card6 {
+  background: #08334600;
+  -webkit-transition: background 1s;
+  transition: background 1s;
+}
+
 section#Projects .card1:hover,
 section#Projects .card2:hover,
 section#Projects .card3:hover,
 section#Projects .card4:hover,
 section#Projects .card5:hover,
 section#Projects .card6:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#0f2027d4), color-stop(#203a43ed), to(#2c5364ed));
-  background: linear-gradient(to right, #0f2027d4, #203a43ed, #2c5364ed);
-  -webkit-transition: all 1s linear;
-  transition: all 1s linear;
+  background: #083346ed;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 section#Projects .card1:hover img,
