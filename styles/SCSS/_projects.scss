@@ -2,13 +2,43 @@ section#Projects {
   height: 100vh;
   .cards {
     height: 95%;
+    background-color: white;
+    padding: 0;
+  }
+  .bg-color {
+    transition: 0.5s ease;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    h2 {
+      transform: translateY(-100px);
+      opacity: 1;
+    }
+    p {
+      font-size: 2rem;
+      color: white;
+      width: 100%;
+    }
   }
   .card1 {
-    background-color: yellow;
+    position: relative;
+
+    &:hover {
+      background-image: rgb(34, 126, 207);
+
+      h2 {
+        transform: translateY(0);
+        opacity: 1;
+        transition: all 0.8s;
+      }
+    }
   }
 
   .card2 {
-    background-color: red;
   }
 
   .card3 {

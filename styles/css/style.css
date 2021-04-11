@@ -475,14 +475,48 @@ section#Projects {
 
 section#Projects .cards {
   height: 95%;
+  background-color: white;
+  padding: 0;
+}
+
+section#Projects .bg-color {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+section#Projects .bg-color h2 {
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+  opacity: 1;
+}
+
+section#Projects .bg-color p {
+  font-size: 2rem;
+  color: white;
+  width: 100%;
 }
 
 section#Projects .card1 {
-  background-color: yellow;
+  position: relative;
 }
 
-section#Projects .card2 {
-  background-color: red;
+section#Projects .card1:hover {
+  background-image: #227ecf;
+}
+
+section#Projects .card1:hover h2 {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
 }
 
 section#Projects .card3 {

@@ -30,8 +30,13 @@ new Splide(".splide", {
   breakpoints: {
     768: {
       perPage: 1,
-      height: "40vh",
+      height: "70vh",
       padding: "50px",
+    },
+    500: {
+      perPage: 1,
+      height: "80vh",
+      padding: "10px",
     },
   },
 }).mount();
