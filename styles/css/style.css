@@ -539,25 +539,27 @@ section#Projects .card6 div.bg-color {
   transition: all 1s;
   opacity: 1;
   position: absolute;
-  top: 90%;
+  top: 95%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: center;
   color: white;
-  background-color: #0833467e;
-  height: 20%;
+  background-color: #083346d2;
+  height: 10%;
   width: 100%;
 }
 
-section#Projects .card1 div.bg-color h2.animated,
-section#Projects .card2 div.bg-color h2.animated,
-section#Projects .card3 div.bg-color h2.animated,
-section#Projects .card4 div.bg-color h2.animated,
-section#Projects .card5 div.bg-color h2.animated,
-section#Projects .card6 div.bg-color h2.animated {
+section#Projects .card1 div.bg-color h2,
+section#Projects .card2 div.bg-color h2,
+section#Projects .card3 div.bg-color h2,
+section#Projects .card4 div.bg-color h2,
+section#Projects .card5 div.bg-color h2,
+section#Projects .card6 div.bg-color h2 {
   -webkit-transform: translateY(10px);
           transform: translateY(10px);
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
 }
 
 section#Projects .card1 div.bg-color div.project-details,
@@ -566,8 +568,8 @@ section#Projects .card3 div.bg-color div.project-details,
 section#Projects .card4 div.bg-color div.project-details,
 section#Projects .card5 div.bg-color div.project-details,
 section#Projects .card6 div.bg-color div.project-details {
-  -webkit-transform: translateY(100px);
-          transform: translateY(100px);
+  -webkit-transform: translateY(120px);
+          transform: translateY(120px);
   font-size: 2rem;
   width: 100%;
 }
@@ -592,22 +594,32 @@ section#Projects .card6:hover div.bg-color {
   background-color: #083346f3;
   -webkit-transition: all 0.7s;
   transition: all 0.7s;
-  /* h2 {
-        transform: translateY(0);
-        opacity: 0;
-        transition: all 0.8s;
-        transition-delay: 0.3s;
-      } */
 }
 
-section#Projects .card1:hover div.bg-color h2.animated,
-section#Projects .card2:hover div.bg-color h2.animated,
-section#Projects .card3:hover div.bg-color h2.animated,
-section#Projects .card4:hover div.bg-color h2.animated,
-section#Projects .card5:hover div.bg-color h2.animated,
-section#Projects .card6:hover div.bg-color h2.animated {
-  -webkit-transform: translateY(100px);
-          transform: translateY(100px);
+section#Projects .card1:hover div.bg-color h2,
+section#Projects .card2:hover div.bg-color h2,
+section#Projects .card3:hover div.bg-color h2,
+section#Projects .card4:hover div.bg-color h2,
+section#Projects .card5:hover div.bg-color h2,
+section#Projects .card6:hover div.bg-color h2 {
+  -webkit-transform: translateY(130px);
+          transform: translateY(130px);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+section#Projects .card1:hover div.bg-color div.project-details,
+section#Projects .card2:hover div.bg-color div.project-details,
+section#Projects .card3:hover div.bg-color div.project-details,
+section#Projects .card4:hover div.bg-color div.project-details,
+section#Projects .card5:hover div.bg-color div.project-details,
+section#Projects .card6:hover div.bg-color div.project-details {
+  -webkit-transform: translateY(140px);
+          transform: translateY(140px);
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }

@@ -25,21 +25,22 @@ section#Projects {
       transition: all 1s;
       opacity: 1;
       position: absolute;
-      top: 90%;
+      top: 95%;
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
       color: white;
-      background-color: #0833467e;
-      height: 20%;
+      background-color: #083346d2;
+      height: 10%;
       width: 100%;
 
-      h2.animated {
+      h2 {
         transform: translateY(10px);
+        transition: all 0.7s;
       }
 
       div.project-details {
-        transform: translateY(100px);
+        transform: translateY(120px);
         font-size: 2rem;
         width: 100%;
       }
@@ -63,20 +64,20 @@ section#Projects {
         background-color: #083346f3;
         transition: all 0.7s;
 
-        h2.animated {
-          transform: translateY(100px);
+        h2 {
+          transform: translateY(130px);
+          transition: 0.7s;
+          transition-delay: 0.1s;
+        }
+        div.project-details {
+          transform: translateY(140px);
+          transition-delay: 1s;
           transition: 0.5s;
         }
+
         img {
           z-index: -1;
         }
-
-        /* h2 {
-        transform: translateY(0);
-        opacity: 0;
-        transition: all 0.8s;
-        transition-delay: 0.3s;
-      } */
       }
 
       .card2 {
