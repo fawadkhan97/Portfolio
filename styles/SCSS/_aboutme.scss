@@ -100,7 +100,7 @@
       border-radius: 18px;
       background: #fdfdfd;
       box-shadow: 14px 14px 32px #d6d6d6, -14px -14px 36px #ffffff;
-
+      transition: transform 0.7s;
       &:hover,
       &:active,
       &:focus {

@@ -394,6 +394,10 @@ nav a:hover {
   background: #fdfdfd;
   -webkit-box-shadow: 14px 14px 32px #d6d6d6, -14px -14px 36px #ffffff;
           box-shadow: 14px 14px 32px #d6d6d6, -14px -14px 36px #ffffff;
+  -webkit-transition: -webkit-transform 0.7s;
+  transition: -webkit-transform 0.7s;
+  transition: transform 0.7s;
+  transition: transform 0.7s, -webkit-transform 0.7s;
 }
 
 #About div.skills-set div.cards:hover, #About div.skills-set div.cards:active, #About div.skills-set div.cards:focus {
@@ -491,6 +495,8 @@ section#Services div.icon-container {
 section#Services div.cards {
   background-color: #de8347;
   color: inherit;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 
 section#Services div.cards:hover, section#Services div.cards:active, section#Services div.cards:focus {
@@ -503,66 +509,67 @@ section#Services div.cards:hover, section#Services div.cards:active, section#Ser
 }
 
 section#Projects {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 section#Projects div.project-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 0 auto;
 }
 
 section#Projects .cards {
-  height: 95%;
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
   padding: 0;
-  color: white;
   position: relative;
   background-color: white;
 }
 
-section#Projects .bg-color {
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+section#Projects .card1 div.bg-color,
+section#Projects .card2 div.bg-color,
+section#Projects .card3 div.bg-color,
+section#Projects .card4 div.bg-color,
+section#Projects .card5 div.bg-color,
+section#Projects .card6 div.bg-color {
+  -webkit-transition: all 1s;
+  transition: all 1s;
   opacity: 1;
   position: absolute;
-  top: 50%;
+  top: 90%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: center;
-}
-
-section#Projects .bg-color h2 {
-  -webkit-transform: translateY(-100px);
-          transform: translateY(-100px);
-  opacity: 0;
-}
-
-section#Projects .bg-color p {
-  font-size: 2rem;
+  color: white;
+  background-color: #0833467e;
+  height: 20%;
   width: 100%;
 }
 
-section#Projects .card1,
-section#Projects .card2,
-section#Projects .card3,
-section#Projects .card4,
-section#Projects .card5,
-section#Projects .card6 {
-  background: #08334600;
-  -webkit-transition: background 1s;
-  transition: background 1s;
+section#Projects .card1 div.bg-color h2.animated,
+section#Projects .card2 div.bg-color h2.animated,
+section#Projects .card3 div.bg-color h2.animated,
+section#Projects .card4 div.bg-color h2.animated,
+section#Projects .card5 div.bg-color h2.animated,
+section#Projects .card6 div.bg-color h2.animated {
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+section#Projects .card1 div.bg-color div.project-details,
+section#Projects .card2 div.bg-color div.project-details,
+section#Projects .card3 div.bg-color div.project-details,
+section#Projects .card4 div.bg-color div.project-details,
+section#Projects .card5 div.bg-color div.project-details,
+section#Projects .card6 div.bg-color div.project-details {
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  font-size: 2rem;
+  width: 100%;
 }
 
 section#Projects .card1 img,
@@ -571,39 +578,46 @@ section#Projects .card3 img,
 section#Projects .card4 img,
 section#Projects .card5 img,
 section#Projects .card6 img {
-  height: 400px;
+  width: 100%;
 }
 
-section#Projects .card1:hover,
-section#Projects .card2:hover,
-section#Projects .card3:hover,
-section#Projects .card4:hover,
-section#Projects .card5:hover,
-section#Projects .card6:hover {
-  background: #083346ed;
+section#Projects .card1:hover div.bg-color,
+section#Projects .card2:hover div.bg-color,
+section#Projects .card3:hover div.bg-color,
+section#Projects .card4:hover div.bg-color,
+section#Projects .card5:hover div.bg-color,
+section#Projects .card6:hover div.bg-color {
+  height: 100%;
+  top: 50%;
+  background-color: #083346f3;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  /* h2 {
+        transform: translateY(0);
+        opacity: 0;
+        transition: all 0.8s;
+        transition-delay: 0.3s;
+      } */
 }
 
-section#Projects .card1:hover img,
-section#Projects .card2:hover img,
-section#Projects .card3:hover img,
-section#Projects .card4:hover img,
-section#Projects .card5:hover img,
-section#Projects .card6:hover img {
+section#Projects .card1:hover div.bg-color h2.animated,
+section#Projects .card2:hover div.bg-color h2.animated,
+section#Projects .card3:hover div.bg-color h2.animated,
+section#Projects .card4:hover div.bg-color h2.animated,
+section#Projects .card5:hover div.bg-color h2.animated,
+section#Projects .card6:hover div.bg-color h2.animated {
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section#Projects .card1:hover div.bg-color img,
+section#Projects .card2:hover div.bg-color img,
+section#Projects .card3:hover div.bg-color img,
+section#Projects .card4:hover div.bg-color img,
+section#Projects .card5:hover div.bg-color img,
+section#Projects .card6:hover div.bg-color img {
   z-index: -1;
-}
-
-section#Projects .card1:hover h2,
-section#Projects .card2:hover h2,
-section#Projects .card3:hover h2,
-section#Projects .card4:hover h2,
-section#Projects .card5:hover h2,
-section#Projects .card6:hover h2 {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  opacity: 1;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
-  -webkit-transition-delay: 0.3s;
-          transition-delay: 0.3s;
 }
 /*# sourceMappingURL=style.css.map */

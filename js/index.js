@@ -26,16 +26,15 @@ new Splide(".splide", {
   padding: "10px",
   easing: "ease",
   lazyLoad: "sequential",
-  height: "80vh",
   breakpoints: {
     768: {
       perPage: 1,
-      height: "50vh",
+      height: "500px",
       padding: "50px",
     },
     500: {
       perPage: 1,
-      height: "35vh",
+      height: "400px",
       padding: "10px",
     },
   },
