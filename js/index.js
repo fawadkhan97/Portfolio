@@ -29,13 +29,11 @@ new Splide(".splide", {
   breakpoints: {
     768: {
       perPage: 1,
-      height: "500px",
       padding: "50px",
     },
     500: {
       perPage: 1,
-      height: "400px",
-      padding: "10px",
+      padding: "20px",
     },
   },
 }).mount();
