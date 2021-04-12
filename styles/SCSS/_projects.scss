@@ -1,5 +1,12 @@
 section#Projects {
   height: 100vh;
+  div.project-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
 
   .cards {
     height: 95%;
@@ -37,6 +44,10 @@ section#Projects {
   .card6 {
     background: #08334600;
     transition: background 1s;
+
+    img {
+      height: 400px;
+    }
   }
 
   .card1,

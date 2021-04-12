@@ -64,6 +64,16 @@ div.cards {
           align-items: center;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
 .flex-centering {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -99,6 +109,10 @@ div.cards {
 }
 
 /****************        Margin top        ******************/
+.margin-top-sm {
+  margin-top: 1.5rem;
+}
+
 .margin-top-md {
   margin-top: 3rem;
 }
@@ -118,6 +132,11 @@ div.cards {
 
 .margin-bottom-huge {
   margin-bottom: 8rem;
+}
+
+/*********************margin-right*****************************/
+.margin-right-sm {
+  margin-right: 1.5rem;
 }
 
 /*****************************padding**********************************/
@@ -183,7 +202,7 @@ nav a:hover {
 
 #particles-js {
   height: 100vh;
-  background-color: #00030B;
+  background-color: #00030b;
   z-index: -1;
 }
 
@@ -199,7 +218,7 @@ nav a:hover {
           align-items: center;
   height: 1%;
   color: #f9fd00;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 #Home .Hero {
@@ -207,28 +226,42 @@ nav a:hover {
           transform: translateY(50vh);
 }
 
-#Home span.hero-text1 {
+#Home .Hero span.hero-text1 {
   font-size: 3rem;
   text-align: center;
 }
 
-#Home h1 {
+#Home .Hero h1 {
   font-size: 8rem;
   font-weight: 600;
 }
 
-#Home span.hero-text2 {
+#Home .Hero span.hero-text2 {
   font-size: 3rem;
   text-decoration: underline;
 }
 
-#Home .typed-cursor {
+#Home .Hero .typed-cursor {
   font-size: 3rem;
   opacity: 0.7;
 }
 
-#Home #Web-dev {
+#Home .Hero #Web-dev-text {
   display: none;
+}
+
+#Home .Hero i {
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+#Home .Hero i:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  margin-right: 1.2rem;
+  margin-left: 1.2rem;
 }
 
 #About {
@@ -473,6 +506,23 @@ section#Projects {
   height: 100vh;
 }
 
+section#Projects div.project-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
 section#Projects .cards {
   height: 95%;
   padding: 0;
@@ -513,6 +563,15 @@ section#Projects .card6 {
   background: #08334600;
   -webkit-transition: background 1s;
   transition: background 1s;
+}
+
+section#Projects .card1 img,
+section#Projects .card2 img,
+section#Projects .card3 img,
+section#Projects .card4 img,
+section#Projects .card5 img,
+section#Projects .card6 img {
+  height: 400px;
 }
 
 section#Projects .card1:hover,
