@@ -37,3 +37,10 @@ new Splide(".splide", {
     },
   },
 }).mount();
+
+$(document).ready(function () {
+  // Add scrollspy to <body>
+  $("body").scrollspy({ target: ".nav", offset: 10 });
+
+  // Add smooth scrolling on all links inside the navbar
+});

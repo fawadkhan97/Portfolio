@@ -19,7 +19,7 @@ nav {
       }
 
       a {
-        font-size: 2.3rem;
+        font-size: 2rem;
         color: #f9fd00;
 
         &:hover {
@@ -27,6 +27,9 @@ nav {
           transition: color 0.6s;
         }
       }
+    }
+    a.active {
+      border-bottom: 2px solid white;
     }
   }
 

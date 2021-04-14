@@ -1,12 +1,15 @@
 section#Services {
   padding: 5rem;
+
   padding-top: 1rem;
   background-color: rgb(20, 20, 36);
-  min-height: 60vh;
+  min-height: 70vh;
+
   h1.services-heading {
     text-align: center;
     font-size: 4rem;
     color: white;
+    margin-top: 6.5rem;
   }
 
   div.hr-line {
@@ -31,6 +34,7 @@ section#Services {
   div.cards {
     background-color: #de8347;
     color: inherit;
+    border-radius: 12px;
     transition: 0.6s ease-in-out;
     &:hover,
     &:active,

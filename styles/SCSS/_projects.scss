@@ -4,6 +4,40 @@ section#Projects {
     flex-direction: column;
 
     margin: 0 auto;
+
+    h1 {
+      font-size: 4.5rem;
+      font-weight: 600;
+
+      position: relative;
+      text-align: center;
+      padding-bottom: 25px;
+      margin-bottom: 2rem;
+      margin-top: 6.6rem;
+
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        width: 220px;
+        height: 3px;
+        background: black;
+        transform: translateX(-50%);
+      }
+
+      &:after {
+        content: "What i have Done";
+        position: absolute;
+        bottom: -12px;
+        left: 33%;
+        font-size: 18px;
+        color: #ece73c;
+        padding: 5px;
+        background: #fff;
+        transform: translateX(-23%);
+      }
+    }
   }
 
   .cards {
@@ -13,6 +47,8 @@ section#Projects {
     padding: 0;
     position: relative;
     background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+    transition: border-radius 0.7s;
   }
 
   .card1,
@@ -60,6 +96,9 @@ section#Projects {
   .card5,
   .card6 {
     &:hover {
+      border-radius: 50px;
+      transition: all 0.8s;
+
       div.bg-color {
         height: 100%;
         top: 50%;
