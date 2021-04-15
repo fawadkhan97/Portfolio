@@ -1,3 +1,10 @@
+window.addEventListener(
+  "beforeunload",
+  function (e) {
+    document.body.className = "page-loading";
+  },
+  false
+);
 let typed = new Typed("#typed", {
   stringsElement: "#typed-strings",
   typeSpeed: 60,
@@ -7,15 +14,25 @@ let typed = new Typed("#typed", {
   autoInsertCss: true,
 });
 
-let navbar = document.getElementById("myNav");
+const navbarStyling = () => {
+  let navbar = document.getElementById("myNav");
+  window.onscroll = () => {
+    if (window.pageYOffset > 20) {
+      navbar.classList.add("nav-colored");
+    } else {
+      navbar.classList.remove("nav-colored");
+    }
+  };
 
-window.onscroll = () => {
-  if (window.pageYOffset > 20) {
-    navbar.classList.add("nav-colored");
-  } else {
-    navbar.classList.remove("nav-colored");
-  }
+  let hamburger = document.getElementById("nav-hamburger");
+  let navbarul = document.getElementById("nav-ul");
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("open");
+    navbarul.classList.toggle("toggle-content");
+  });
 };
+
+navbarStyling();
 
 new Splide(".splide", {
   type: "loop",
@@ -69,11 +86,3 @@ $(document).ready(function () {
     } // End if
   });
 });
-
-window.addEventListener(
-  "beforeunload",
-  function (e) {
-    document.body.className = "page-loading";
-  },
-  false
-);

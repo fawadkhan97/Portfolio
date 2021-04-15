@@ -168,11 +168,27 @@ nav#myNav {
   z-index: 5;
 }
 
+@media only screen and (max-width: 768px) {
+  nav#myNav {
+    background-color: #030019;
+  }
+}
+
 nav#myNav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+  nav#myNav ul {
+    display: none;
+    position: absolute;
+    top: 65px;
+    background-color: #030019;
+    width: 100%;
+  }
 }
 
 nav#myNav ul li {
@@ -187,6 +203,12 @@ nav#myNav ul li:last-child {
 nav#myNav ul li a {
   font-size: 2rem;
   color: #fbff00;
+}
+
+@media only screen and (max-width: 768px) {
+  nav#myNav ul li a {
+    margin-bottom: 15px;
+  }
 }
 
 nav#myNav ul li a::after {
@@ -207,7 +229,6 @@ nav#myNav ul li a:hover {
 
 nav#myNav ul li a:hover::after {
   transform: scale(1);
-  width: inherit;
 }
 
 nav#myNav ul a.active::after {
@@ -229,15 +250,81 @@ nav#myNav a:hover {
   text-decoration: none;
 }
 
+nav#myNav div#nav-hamburger {
+  width: 50px;
+  position: relative;
+  margin-right: 45px;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  nav#myNav div#nav-hamburger {
+    display: block;
+  }
+}
+
+nav#myNav #nav-hamburger span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #fbff00;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+nav#myNav #nav-hamburger span:nth-child(1) {
+  top: 0px;
+}
+
+nav#myNav #nav-hamburger span:nth-child(2) {
+  top: 18px;
+}
+
+nav#myNav #nav-hamburger span:nth-child(3) {
+  top: 36px;
+}
+
+nav#myNav #nav-hamburger.open span:nth-child(1) {
+  top: 18px;
+  transform: rotate(135deg);
+}
+
+nav#myNav #nav-hamburger.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+nav#myNav #nav-hamburger.open span:nth-child(3) {
+  top: 18px;
+  transform: rotate(-135deg);
+}
+
 .nav-colored {
   background-color: #030019;
   transition: all 1s;
+}
+
+.toggle-content {
+  display: block !important;
 }
 
 #particles-js {
   height: 100vh;
   background-color: #00030b;
   z-index: -1;
+}
+
+@media only screen and (max-width: 400px) {
+  #particles-js {
+    height: 80vh;
+  }
 }
 
 #Home {
@@ -260,7 +347,7 @@ nav#myNav a:hover {
 
 @media only screen and (max-width: 576px) {
   #Home .Hero span.hero-text1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-left: 1rem;
   }
 }
@@ -272,7 +359,7 @@ nav#myNav a:hover {
 
 @media only screen and (max-width: 576px) {
   #Home .Hero h1 {
-    font-size: 3.5rem;
+    font-size: 5rem;
   }
 }
 
@@ -283,7 +370,7 @@ nav#myNav a:hover {
 
 @media only screen and (max-width: 576px) {
   #Home .Hero span.hero-text2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 
