@@ -1,4 +1,4 @@
-nav {
+nav#myNav {
   display: flex;
   justify-content: space-between;
   padding: 15px 0;
@@ -29,7 +29,7 @@ nav {
       }
     }
     a.active {
-      border-bottom: 2px solid white;
+      border-bottom: 2px solid rgb(253, 249, 11);
     }
   }
 

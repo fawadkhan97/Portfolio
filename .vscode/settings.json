@@ -9,5 +9,16 @@
         "transition",
         "translate",
         "y"
-    ]
+    ],
+    "liveSassCompile.settings.formats": [
+
+
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/styles/css"
+        }
+    ],
+    "liveSassCompile.settings.includeItems": [],
+    "liveSassCompile.settings.autoprefix": []
 }

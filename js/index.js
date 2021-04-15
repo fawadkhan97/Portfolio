@@ -1,4 +1,4 @@
-var typed = new Typed("#typed", {
+let typed = new Typed("#typed", {
   stringsElement: "#typed-strings",
   typeSpeed: 60,
   backSpeed: 40,
@@ -7,7 +7,7 @@ var typed = new Typed("#typed", {
   autoInsertCss: true,
 });
 
-var navbar = document.getElementById("myNav");
+let navbar = document.getElementById("myNav");
 
 window.onscroll = () => {
   if (window.pageYOffset > 20) {
@@ -43,4 +43,29 @@ $(document).ready(function () {
   $("body").scrollspy({ target: ".nav", offset: 10 });
 
   // Add smooth scrolling on all links inside the navbar
+
+  // Add smooth scrolling to all links
+  $("a").on("click", function (event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $("html, body").animate(
+        {
+          scrollTop: $(hash).offset().top,
+        },
+        1200,
+        function () {
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        }
+      );
+    } // End if
+  });
 });
