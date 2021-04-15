@@ -13,6 +13,7 @@ nav#myNav {
 
     li {
       margin-right: 10px;
+      width: fit-content;
 
       &:last-child {
         margin-right: 50px;
@@ -20,16 +21,39 @@ nav#myNav {
 
       a {
         font-size: 2rem;
-        color: #f9fd00;
+        color: #fbff00;
+
+        &::after {
+          content: "";
+          display: block;
+          height: 2px;
+          width: inherit;
+          background: #f9fd00;
+          transition: all 0.4s ease;
+          transform: scale(0);
+          margin-top: 6px;
+        }
 
         &:hover {
-          color: #f88d00;
+          color: #fbff06;
           transition: color 0.6s;
+          &::after {
+            transform: scale(1);
+            width: inherit;
+          }
         }
       }
     }
     a.active {
-      border-bottom: 2px solid rgb(253, 249, 11);
+      &::after {
+        content: "";
+        display: block;
+        height: 2px;
+        background: #f9fd00;
+        transition: all 0.4s ease;
+        transform: scale(1);
+        margin-top: 4px;
+      }
     }
   }
 

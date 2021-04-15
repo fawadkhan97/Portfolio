@@ -49,13 +49,6 @@
     }
   }
 
-  svg#about-blob {
-    position: absolute;
-    transform: scale(0.2);
-    bottom: 0;
-    left: 0;
-    z-index: -2;
-  }
 
   svg#sw-js-blob-svg {
     position: absolute;
@@ -66,6 +59,10 @@
     transform-origin: 50% 50%;
     top: 0;
     left: 20%;
+
+    @include respond(md) {
+      display: none;
+    }
   }
 
   @keyframes move {
@@ -94,6 +91,18 @@
     }
   }
 
+
+  svg#about-blob {
+    position: absolute;
+    transform: scale(0.2);
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+
+
+  }
+
+
   div.skills-set {
     div.cards {
       padding: 15px;
@@ -101,6 +110,7 @@
       background: #fdfdfd;
       box-shadow: 14px 14px 32px #d6d6d6, -14px -14px 36px #ffffff;
       transition: transform 0.7s;
+
       &:hover,
       &:active,
       &:focus {

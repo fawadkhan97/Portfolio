@@ -9,26 +9,40 @@
   justify-content: center;
   align-items: center;
   height: 1%;
-
   color: #f9fd00;
   font-family: "Ubuntu", sans-serif;
+
   .Hero {
     transform: translateY(50vh);
 
     span.hero-text1 {
       font-size: 3rem;
       text-align: center;
+
+      @include respond(sm) {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+      }
     }
 
     h1 {
       font-size: 8rem;
       font-weight: 600;
+
+      @include respond(sm) {
+        font-size: 3.5rem;
+      }
     }
 
     span.hero-text2 {
       font-size: 3rem;
       text-decoration: underline;
+
+      @include respond(sm) {
+        font-size: 1.5rem;
+      }
     }
+
     .typed-cursor {
       font-size: 3rem;
       opacity: 0.7;
