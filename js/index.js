@@ -1,10 +1,3 @@
-window.addEventListener(
-  "beforeunload",
-  function (e) {
-    document.body.className = "page-loading";
-  },
-  false
-);
 let typed = new Typed("#typed", {
   stringsElement: "#typed-strings",
   typeSpeed: 60,

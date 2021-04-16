@@ -75,29 +75,6 @@ body::-webkit-scrollbar-thumb {
   background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.74, #eaec4d), color-stop(0.4, #141424), color-stop(0.36, #de8347));
 }
 
-@keyframes page-load {
-  from {
-    background-color: #ffc422;
-  }
-  to {
-    background-color: #c0392b;
-  }
-}
-
-.page-loading::before {
-  content: " ";
-  display: block;
-  position: fixed;
-  z-index: 10;
-  height: 2px;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background-color: #ff822f;
-  animation: page-load infinite ease-out 2s;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-}
-
 .flex-centering {
   display: flex;
   justify-content: center;
@@ -284,11 +261,11 @@ nav#myNav #nav-hamburger span:nth-child(1) {
 }
 
 nav#myNav #nav-hamburger span:nth-child(2) {
-  top: 18px;
+  top: 15px;
 }
 
 nav#myNav #nav-hamburger span:nth-child(3) {
-  top: 36px;
+  top: 30px;
 }
 
 nav#myNav #nav-hamburger.open span:nth-child(1) {
