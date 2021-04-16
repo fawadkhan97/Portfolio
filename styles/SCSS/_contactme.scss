@@ -1,4 +1,86 @@
 section#ContactMe {
   min-height: 70vh;
   background-color: rgb(20, 20, 36);
+  padding: 3rem;
+  color: white;
+
+  h1 {
+    color: white;
+
+
+  }
+
+  div.contact-card {
+    width: 400px;
+    background-color: #083346;
+    height: max-content;
+    padding: 2rem;
+    padding-top: 10rem;
+    border: 2px solid white;
+    border-radius: 25px;
+    margin-top: 5rem;
+    position: relative;
+
+    @include respond(md) {
+      width: 300px;
+    }
+
+    img {
+      height: 150px;
+      width: 150x;
+      border-radius: 50%;
+      position: absolute;
+      top: -13%;
+      left: 30%;
+
+      @include respond(md) {
+        left: 27%;
+      }
+    }
+
+
+    h3 {
+      padding-bottom: 2rem;
+      border-bottom: 1px solid white;
+    }
+
+    ul {
+      list-style: none;
+      text-align: left;
+      margin-left: 2.5rem;
+
+      li {
+        margin-bottom: 20px;
+
+        i {
+          font-size: 26px;
+          vertical-align: bottom;
+
+          transition: all 0.6s;
+
+          &:hover {
+            transform: scale(1.2);
+            transition: all 0.7s;
+
+          }
+        }
+      }
+
+      a {
+
+
+        &:hover {
+          text-decoration: underline;
+
+        }
+
+        span {
+          font-size: 2rem;
+          transform: translateY(10px);
+
+        }
+      }
+    }
+  }
+
 }

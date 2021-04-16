@@ -72,7 +72,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.74, #eaec4d), color-stop(0.4, #141424), color-stop(0.36, #de8347));
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.25, #eaec4d), color-stop(0.65, #141424), color-stop(0.25, #de8347), color-stop(0.65, #083346));
 }
 
 .flex-centering {
@@ -101,7 +101,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /****************        Margin top        ******************/
-.margin-top-sm {
+.margin-top-small {
   margin-top: 1.5rem;
 }
 
@@ -127,7 +127,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*********************margin-right*****************************/
-.margin-right-sm {
+.margin-right-small {
   margin-right: 1.5rem;
 }
 
@@ -145,9 +145,9 @@ nav#myNav {
   z-index: 5;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 576px) {
   nav#myNav {
-    background-color: #030019;
+    background-color: #083346;
   }
 }
 
@@ -163,7 +163,7 @@ nav#myNav ul {
     display: none;
     position: absolute;
     top: 65px;
-    background-color: #030019;
+    background-color: #083346;
     width: 100%;
   }
 }
@@ -284,7 +284,7 @@ nav#myNav #nav-hamburger.open span:nth-child(3) {
 }
 
 .nav-colored {
-  background-color: #030019;
+  background-color: #083346;
   transition: all 1s;
 }
 
@@ -294,7 +294,7 @@ nav#myNav #nav-hamburger.open span:nth-child(3) {
 
 #particles-js {
   height: 100vh;
-  background-color: #00030b;
+  background-color: #0e0e19;
   z-index: -1;
 }
 
@@ -543,17 +543,6 @@ section#Services div.hr-line {
   width: 250px;
   margin: 0 auto;
   margin-bottom: 50px;
-}
-
-section#Services div.icon-container {
-  width: 10rem;
-  height: 10rem;
-  border: 3px double #fff;
-  border-radius: 20%;
-  margin-bottom: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 section#Services div.cards {
@@ -818,5 +807,79 @@ section#Projects .card6:hover div.bg-color img {
 section#ContactMe {
   min-height: 70vh;
   background-color: #141424;
+  padding: 3rem;
+  color: white;
+}
+
+section#ContactMe h1 {
+  color: white;
+}
+
+section#ContactMe div.contact-card {
+  width: 400px;
+  background-color: #083346;
+  height: max-content;
+  padding: 2rem;
+  padding-top: 10rem;
+  border: 2px solid white;
+  border-radius: 25px;
+  margin-top: 5rem;
+  position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  section#ContactMe div.contact-card {
+    width: 300px;
+  }
+}
+
+section#ContactMe div.contact-card img {
+  height: 150px;
+  width: 150x;
+  border-radius: 50%;
+  position: absolute;
+  top: -13%;
+  left: 30%;
+}
+
+@media only screen and (max-width: 768px) {
+  section#ContactMe div.contact-card img {
+    left: 27%;
+  }
+}
+
+section#ContactMe div.contact-card h3 {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid white;
+}
+
+section#ContactMe div.contact-card ul {
+  list-style: none;
+  text-align: left;
+  margin-left: 2.5rem;
+}
+
+section#ContactMe div.contact-card ul li {
+  margin-bottom: 20px;
+}
+
+section#ContactMe div.contact-card ul li i {
+  font-size: 26px;
+  vertical-align: bottom;
+  transition: all 0.6s;
+}
+
+section#ContactMe div.contact-card ul li i:hover {
+  transform: scale(1.2);
+  transition: all 0.7s;
+}
+
+section#ContactMe div.contact-card ul a:hover {
+  text-decoration: underline;
+}
+
+section#ContactMe div.contact-card ul a span {
+  font-size: 2rem;
+  transform: translateY(10px);
 }
 /*# sourceMappingURL=style.css.map */

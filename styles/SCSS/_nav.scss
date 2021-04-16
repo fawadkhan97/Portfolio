@@ -8,8 +8,8 @@ nav#myNav {
 
 
 
-  @include respond(md) {
-    background-color: #030019;
+  @include respond(sm) {
+    background-color: #083346;
   }
 
   ul {
@@ -23,7 +23,7 @@ nav#myNav {
       display: none;
       position: absolute;
       top: 65px;
-      background-color: #030019;
+      background-color: #083346;
       width: 100%;
     }
 
@@ -150,7 +150,7 @@ nav#myNav {
 }
 
 .nav-colored {
-  background-color: #030019;
+  background-color: #083346;
   transition: all 1s;
 }
 

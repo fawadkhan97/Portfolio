@@ -76,7 +76,8 @@ body::-webkit-scrollbar-thumb {
   background-image: -webkit-gradient(linear,
       left bottom,
       left top,
-      color-stop(0.74, #eaec4d),
-      color-stop(0.4, #141424),
-      color-stop(0.36, #de8347));
+      color-stop(0.25, #eaec4d),
+      color-stop(0.65, #141424),
+      color-stop(0.25, #de8347),
+      color-stop(0.65, #083346));
 }
