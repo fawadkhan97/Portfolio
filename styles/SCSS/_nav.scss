@@ -108,6 +108,11 @@ nav#myNav {
 
       display: block;
     }
+
+    @include respond(sm) {
+      width: 40px;
+      height: 35px;
+    }
   }
 
   #nav-hamburger span {
@@ -126,14 +131,26 @@ nav#myNav {
 
   #nav-hamburger span:nth-child(1) {
     top: 6px;
+
+    @include respond(sm) {
+      top: 6px;
+    }
   }
 
   #nav-hamburger span:nth-child(2) {
     top: 17px;
+
+    @include respond(sm) {
+      top: 15px;
+    }
   }
 
   #nav-hamburger span:nth-child(3) {
     top: 28px;
+
+    @include respond(sm) {
+      top: 24px;
+    }
   }
 
   #nav-hamburger.open span:nth-child(1) {

@@ -247,6 +247,13 @@ nav#myNav div#nav-hamburger {
   }
 }
 
+@media only screen and (max-width: 576px) {
+  nav#myNav div#nav-hamburger {
+    width: 40px;
+    height: 35px;
+  }
+}
+
 nav#myNav #nav-hamburger span {
   display: block;
   position: absolute;
@@ -264,12 +271,30 @@ nav#myNav #nav-hamburger span:nth-child(1) {
   top: 6px;
 }
 
+@media only screen and (max-width: 576px) {
+  nav#myNav #nav-hamburger span:nth-child(1) {
+    top: 6px;
+  }
+}
+
 nav#myNav #nav-hamburger span:nth-child(2) {
   top: 17px;
 }
 
+@media only screen and (max-width: 576px) {
+  nav#myNav #nav-hamburger span:nth-child(2) {
+    top: 15px;
+  }
+}
+
 nav#myNav #nav-hamburger span:nth-child(3) {
   top: 28px;
+}
+
+@media only screen and (max-width: 576px) {
+  nav#myNav #nav-hamburger span:nth-child(3) {
+    top: 24px;
+  }
 }
 
 nav#myNav #nav-hamburger.open span:nth-child(1) {
