@@ -13,6 +13,12 @@ nav#myNav {
     background-color: #083346;
   }
 
+  a.logo {
+    @include respond(sm) {
+      margin-top: -10px;
+    }
+  }
+
   ul {
     list-style-type: none;
     margin: 0;

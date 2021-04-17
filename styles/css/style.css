@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html {
@@ -33,20 +34,38 @@ div.cards {
   color: inherit;
   height: 200px;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 auto;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   padding: 40px 10px;
 }
 
 .flex-centering {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 a {
@@ -65,7 +84,8 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #f5f5f5;
   border-radius: 10px;
 }
@@ -76,10 +96,19 @@ body::-webkit-scrollbar-thumb {
 }
 
 .flex-centering {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 /************************margins*********************/
@@ -107,6 +136,10 @@ body::-webkit-scrollbar-thumb {
 
 .margin-top-md {
   margin-top: 3rem;
+}
+
+.margin-top-huge {
+  margin-top: 8rem;
 }
 
 /****************        Margin bottom        ******************/
@@ -137,8 +170,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 nav#myNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 15px 0;
   padding-bottom: 10px;
   position: fixed;
@@ -152,10 +189,18 @@ nav#myNav {
   }
 }
 
+@media only screen and (max-width: 576px) {
+  nav#myNav a.logo {
+    margin-top: -10px;
+  }
+}
+
 nav#myNav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -164,13 +209,15 @@ nav#myNav ul {
     display: none;
     position: absolute;
     top: 65px;
-    background-color: #0833469f;
+    background-color: #083346;
     width: 100%;
   }
 }
 
 nav#myNav ul li {
   margin-right: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -195,18 +242,26 @@ nav#myNav ul li a::after {
   height: 2px;
   width: inherit;
   background: #f9fd00;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  transform: scale(0);
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
   margin-top: 6px;
 }
 
 nav#myNav ul li a:hover {
   color: #fbff06;
+  -webkit-transition: color 0.6s;
+  -o-transition: color 0.6s;
   transition: color 0.6s;
 }
 
 nav#myNav ul li a:hover::after {
-  transform: scale(1);
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
 }
 
 nav#myNav ul a.active::after {
@@ -214,8 +269,12 @@ nav#myNav ul a.active::after {
   display: block;
   height: 2px;
   background: #f9fd00;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
-  transform: scale(1);
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
   margin-top: 4px;
 }
 
@@ -233,7 +292,11 @@ nav#myNav div#nav-hamburger {
   height: 40px;
   position: relative;
   margin-right: 25px;
-  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   cursor: pointer;
   display: none;
@@ -263,7 +326,11 @@ nav#myNav #nav-hamburger span {
   border-radius: 9px;
   opacity: 1;
   left: 15%;
-  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
 }
 
@@ -299,7 +366,9 @@ nav#myNav #nav-hamburger span:nth-child(3) {
 
 nav#myNav #nav-hamburger.open span:nth-child(1) {
   top: 18px;
-  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 
 nav#myNav #nav-hamburger.open span:nth-child(2) {
@@ -309,11 +378,15 @@ nav#myNav #nav-hamburger.open span:nth-child(2) {
 
 nav#myNav #nav-hamburger.open span:nth-child(3) {
   top: 18px;
-  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg);
 }
 
 .nav-colored {
   background-color: #083346;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
   transition: all 1s;
 }
 
@@ -327,23 +400,26 @@ nav#myNav #nav-hamburger.open span:nth-child(3) {
   z-index: -1;
 }
 
-@media only screen and (max-width: 400px) {
-  #particles-js {
-    height: 100vh;
-  }
-}
-
 #Home {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 1%;
   color: #f9fd00;
   font-family: "Ubuntu", sans-serif;
 }
 
 #Home .Hero {
-  transform: translateY(50vh);
+  -webkit-transform: translateY(50vh);
+      -ms-transform: translateY(50vh);
+          transform: translateY(50vh);
+  position: relative;
 }
 
 #Home .Hero span.hero-text1 {
@@ -389,15 +465,64 @@ nav#myNav #nav-hamburger.open span:nth-child(3) {
   display: none;
 }
 
-#Home .Hero i {
+#Home .Hero div.icon-container i {
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
   transition: all 0.6s;
 }
 
-#Home .Hero i:hover {
-  transform: scale(1.5);
+#Home .Hero div.icon-container i:hover {
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: all 0.7s;
+  -o-transition: all 0.7s;
   transition: all 0.7s;
   margin-right: 1.2rem;
   margin-left: 1.2rem;
+}
+
+#Home .Hero div.scroll-down-container {
+  position: absolute;
+  top: 130%;
+  left: 47%;
+  color: white;
+}
+
+@media only screen and (max-width: 576px) {
+  #Home .Hero div.scroll-down-container {
+    top: 150%;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  #Home .Hero div.scroll-down-container {
+    top: 130%;
+  }
+}
+
+#Home .Hero div.scroll-down-container i#scroll {
+  position: absolute;
+  -webkit-animation: scrolldown 1.4s infinite ease-in-out;
+          animation: scrolldown 1.4s infinite ease-in-out;
+}
+
+@-webkit-keyframes scrolldown {
+  0% {
+    top: 20%;
+  }
+  100% {
+    top: 143%;
+  }
+}
+
+@keyframes scrolldown {
+  0% {
+    top: 20%;
+  }
+  100% {
+    top: 143%;
+  }
 }
 
 #About {
@@ -424,7 +549,9 @@ nav#myNav #nav-hamburger.open span:nth-child(3) {
   width: 180px;
   height: 3px;
   background: black;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 #About h1.title:after {
@@ -436,7 +563,9 @@ nav#myNav #nav-hamburger.open span:nth-child(3) {
   color: #d6cf00;
   padding: 5px;
   background: #fff;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 #About div.about_content div.about_text p {
@@ -449,65 +578,138 @@ nav#myNav #nav-hamburger.open span:nth-child(3) {
 
 #About svg#sw-js-blob-svg {
   position: absolute;
-  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
   z-index: -1;
   animation: move 25s ease-in-out infinite reverse forwards;
-  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
   top: 0;
   left: 20%;
 }
 
-@keyframes move {
+@-webkit-keyframes move {
   0% {
-    transform: scale(0.5) translate(-20px, -50px);
+    -webkit-transform: scale(0.5) translate(-20px, -50px);
+            transform: scale(0.5) translate(-20px, -50px);
   }
   38% {
-    transform: scale(0.8, 1) translate(-23px, -90px) rotate(160deg);
+    -webkit-transform: scale(0.8, 1) translate(-23px, -90px) rotate(160deg);
+            transform: scale(0.8, 1) translate(-23px, -90px) rotate(160deg);
   }
   40% {
-    transform: scale(0.8, 1) translate(-25px, -80px) rotate(160deg);
+    -webkit-transform: scale(0.8, 1) translate(-25px, -80px) rotate(160deg);
+            transform: scale(0.8, 1) translate(-25px, -80px) rotate(160deg);
   }
   78% {
-    transform: scale(0.9) translate(-27px, -60px) rotate(-20deg);
+    -webkit-transform: scale(0.9) translate(-27px, -60px) rotate(-20deg);
+            transform: scale(0.9) translate(-27px, -60px) rotate(-20deg);
   }
   80% {
-    transform: scale(0.7) translate(22px, -80px) rotate(-20deg);
+    -webkit-transform: scale(0.7) translate(22px, -80px) rotate(-20deg);
+            transform: scale(0.7) translate(22px, -80px) rotate(-20deg);
   }
   100% {
-    transform: scale(0.5) translate(20px, -30px);
+    -webkit-transform: scale(0.5) translate(20px, -30px);
+            transform: scale(0.5) translate(20px, -30px);
+  }
+}
+
+@keyframes move {
+  0% {
+    -webkit-transform: scale(0.5) translate(-20px, -50px);
+            transform: scale(0.5) translate(-20px, -50px);
+  }
+  38% {
+    -webkit-transform: scale(0.8, 1) translate(-23px, -90px) rotate(160deg);
+            transform: scale(0.8, 1) translate(-23px, -90px) rotate(160deg);
+  }
+  40% {
+    -webkit-transform: scale(0.8, 1) translate(-25px, -80px) rotate(160deg);
+            transform: scale(0.8, 1) translate(-25px, -80px) rotate(160deg);
+  }
+  78% {
+    -webkit-transform: scale(0.9) translate(-27px, -60px) rotate(-20deg);
+            transform: scale(0.9) translate(-27px, -60px) rotate(-20deg);
+  }
+  80% {
+    -webkit-transform: scale(0.7) translate(22px, -80px) rotate(-20deg);
+            transform: scale(0.7) translate(22px, -80px) rotate(-20deg);
+  }
+  100% {
+    -webkit-transform: scale(0.5) translate(20px, -30px);
+            transform: scale(0.5) translate(20px, -30px);
   }
 }
 
 @media only screen and (max-width: 768px) {
   #About svg#sw-js-blob-svg {
     bottom: 20%;
-    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  @-webkit-keyframes move {
+    0% {
+      -webkit-transform: scale(1.2) translate(-20px, -20px);
+              transform: scale(1.2) translate(-20px, -20px);
+    }
+    38% {
+      -webkit-transform: scale(1.8) translate(-23px, -50px) rotate(160deg);
+              transform: scale(1.8) translate(-23px, -50px) rotate(160deg);
+    }
+    40% {
+      -webkit-transform: scale(1.8) translate(-25px, -40px) rotate(160deg);
+              transform: scale(1.8) translate(-25px, -40px) rotate(160deg);
+    }
+    78% {
+      -webkit-transform: scale(1.9) translate(-27px, -30px) rotate(-20deg);
+              transform: scale(1.9) translate(-27px, -30px) rotate(-20deg);
+    }
+    80% {
+      -webkit-transform: scale(1.7) translate(22px, -20px) rotate(-20deg);
+              transform: scale(1.7) translate(22px, -20px) rotate(-20deg);
+    }
+    100% {
+      -webkit-transform: scale(1.5) translate(20px, -30px);
+              transform: scale(1.5) translate(20px, -30px);
+    }
   }
   @keyframes move {
     0% {
-      transform: scale(1.2) translate(-20px, -20px);
+      -webkit-transform: scale(1.2) translate(-20px, -20px);
+              transform: scale(1.2) translate(-20px, -20px);
     }
     38% {
-      transform: scale(1.8) translate(-23px, -50px) rotate(160deg);
+      -webkit-transform: scale(1.8) translate(-23px, -50px) rotate(160deg);
+              transform: scale(1.8) translate(-23px, -50px) rotate(160deg);
     }
     40% {
-      transform: scale(1.8) translate(-25px, -40px) rotate(160deg);
+      -webkit-transform: scale(1.8) translate(-25px, -40px) rotate(160deg);
+              transform: scale(1.8) translate(-25px, -40px) rotate(160deg);
     }
     78% {
-      transform: scale(1.9) translate(-27px, -30px) rotate(-20deg);
+      -webkit-transform: scale(1.9) translate(-27px, -30px) rotate(-20deg);
+              transform: scale(1.9) translate(-27px, -30px) rotate(-20deg);
     }
     80% {
-      transform: scale(1.7) translate(22px, -20px) rotate(-20deg);
+      -webkit-transform: scale(1.7) translate(22px, -20px) rotate(-20deg);
+              transform: scale(1.7) translate(22px, -20px) rotate(-20deg);
     }
     100% {
-      transform: scale(1.5) translate(20px, -30px);
+      -webkit-transform: scale(1.5) translate(20px, -30px);
+              transform: scale(1.5) translate(20px, -30px);
     }
   }
 }
 
 #About svg#about-blob {
   position: absolute;
-  transform: scale(0.2);
+  -webkit-transform: scale(0.2);
+      -ms-transform: scale(0.2);
+          transform: scale(0.2);
   bottom: 0;
   left: 0;
   z-index: -2;
@@ -517,12 +719,21 @@ nav#myNav #nav-hamburger.open span:nth-child(3) {
   padding: 15px;
   border-radius: 18px;
   background: #fdfdfd;
-  box-shadow: 14px 14px 32px #d6d6d6, -14px -14px 36px #ffffff;
+  -webkit-box-shadow: 14px 14px 32px #d6d6d6, -14px -14px 36px #ffffff;
+          box-shadow: 14px 14px 32px #d6d6d6, -14px -14px 36px #ffffff;
+  -webkit-transition: -webkit-transform 0.7s;
+  transition: -webkit-transform 0.7s;
+  -o-transition: transform 0.7s;
   transition: transform 0.7s;
+  transition: transform 0.7s, -webkit-transform 0.7s;
 }
 
 #About div.skills-set div.cards:hover, #About div.skills-set div.cards:active, #About div.skills-set div.cards:focus {
-  transform: scale(1.16);
+  -webkit-transform: scale(1.16);
+      -ms-transform: scale(1.16);
+          transform: scale(1.16);
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
   transition: all 0.8s;
 }
 
@@ -599,13 +810,19 @@ section#Services div.cards {
   background-color: #de8347;
   color: inherit;
   border-radius: 12px;
+  -webkit-transition: 0.6s ease-in-out;
+  -o-transition: 0.6s ease-in-out;
   transition: 0.6s ease-in-out;
 }
 
 section#Services div.cards:hover, section#Services div.cards:active, section#Services div.cards:focus {
   color: #313157;
   background-color: #ff9954;
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
   transition: all 0.8s;
 }
 
@@ -614,7 +831,10 @@ section#Projects {
 }
 
 section#Projects div.project-header {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0 auto;
 }
 
@@ -636,7 +856,9 @@ section#Projects div.project-header h1:before {
   width: 220px;
   height: 3px;
   background: black;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 section#Projects div.project-header h1:after {
@@ -648,7 +870,9 @@ section#Projects div.project-header h1:after {
   color: #ece73c;
   padding: 5px;
   background: #fff;
-  transform: translateX(-23%);
+  -webkit-transform: translateX(-23%);
+      -ms-transform: translateX(-23%);
+          transform: translateX(-23%);
 }
 
 section#Projects .cards {
@@ -659,6 +883,8 @@ section#Projects .cards {
   position: relative;
   background-color: white;
   border-radius: 40px;
+  -webkit-transition: border-radius 0.7s;
+  -o-transition: border-radius 0.7s;
   transition: border-radius 0.7s;
 }
 
@@ -684,12 +910,16 @@ section#Projects .card6 div.bg-color {
   position: absolute;
   top: 95%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-align: center;
   color: white;
   background-color: #083346d2;
   height: 10%;
   width: 100%;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
   transition: all 1s;
 }
 
@@ -722,7 +952,11 @@ section#Projects .card3 div.bg-color h2,
 section#Projects .card4 div.bg-color h2,
 section#Projects .card5 div.bg-color h2,
 section#Projects .card6 div.bg-color h2 {
-  transform: translateY(10px);
+  -webkit-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-transition: all 0.7s;
+  -o-transition: all 0.7s;
   transition: all 0.7s;
 }
 
@@ -743,10 +977,16 @@ section#Projects .card3 div.bg-color div.project-details,
 section#Projects .card4 div.bg-color div.project-details,
 section#Projects .card5 div.bg-color div.project-details,
 section#Projects .card6 div.bg-color div.project-details {
-  transform: translateY(120px);
+  -webkit-transform: translateY(120px);
+      -ms-transform: translateY(120px);
+          transform: translateY(120px);
   font-size: 2rem;
   width: 100%;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  -o-transition: transform 0.4s;
   transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
 @media only screen and (max-width: 400px) {
@@ -777,6 +1017,8 @@ section#Projects .card4:hover,
 section#Projects .card5:hover,
 section#Projects .card6:hover {
   border-radius: 50px;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
   transition: all 0.8s;
 }
 
@@ -789,6 +1031,8 @@ section#Projects .card6:hover div.bg-color {
   height: 100%;
   top: 50%;
   background-color: #083346f3;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
   transition: all 0.8s;
 }
 
@@ -798,9 +1042,15 @@ section#Projects .card3:hover div.bg-color h2,
 section#Projects .card4:hover div.bg-color h2,
 section#Projects .card5:hover div.bg-color h2,
 section#Projects .card6:hover div.bg-color h2 {
-  transform: translateY(130px);
+  -webkit-transform: translateY(130px);
+      -ms-transform: translateY(130px);
+          transform: translateY(130px);
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
   transition: 0.7s;
-  transition-delay: 0.1s;
+  -webkit-transition-delay: 0.1s;
+       -o-transition-delay: 0.1s;
+          transition-delay: 0.1s;
 }
 
 @media only screen and (max-width: 400px) {
@@ -810,7 +1060,9 @@ section#Projects .card6:hover div.bg-color h2 {
   section#Projects .card4:hover div.bg-color h2,
   section#Projects .card5:hover div.bg-color h2,
   section#Projects .card6:hover div.bg-color h2 {
-    transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+        -ms-transform: translateY(50px);
+            transform: translateY(50px);
   }
 }
 
@@ -820,7 +1072,9 @@ section#Projects .card3:hover div.bg-color div.project-details,
 section#Projects .card4:hover div.bg-color div.project-details,
 section#Projects .card5:hover div.bg-color div.project-details,
 section#Projects .card6:hover div.bg-color div.project-details {
-  transform: translateY(140px);
+  -webkit-transform: translateY(140px);
+      -ms-transform: translateY(140px);
+          transform: translateY(140px);
 }
 
 @media only screen and (max-width: 400px) {
@@ -830,7 +1084,9 @@ section#Projects .card6:hover div.bg-color div.project-details {
   section#Projects .card4:hover div.bg-color div.project-details,
   section#Projects .card5:hover div.bg-color div.project-details,
   section#Projects .card6:hover div.bg-color div.project-details {
-    transform: translateY(70px);
+    -webkit-transform: translateY(70px);
+        -ms-transform: translateY(70px);
+            transform: translateY(70px);
   }
 }
 
@@ -859,6 +1115,7 @@ section#ContactMe {
   background-color: #141424;
   padding: 3rem;
   color: white;
+  width: 100%;
 }
 
 section#ContactMe h1 {
@@ -868,6 +1125,8 @@ section#ContactMe h1 {
 section#ContactMe div.contact-card {
   width: 400px;
   background-color: #083346;
+  height: -webkit-max-content;
+  height: -moz-max-content;
   height: max-content;
   padding: 2rem;
   padding-top: 10rem;
@@ -880,6 +1139,12 @@ section#ContactMe div.contact-card {
 @media only screen and (max-width: 768px) {
   section#ContactMe div.contact-card {
     width: 300px;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  section#ContactMe div.contact-card {
+    width: 230px;
   }
 }
 
@@ -916,11 +1181,17 @@ section#ContactMe div.contact-card ul li {
 section#ContactMe div.contact-card ul li i {
   font-size: 26px;
   vertical-align: bottom;
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
   transition: all 0.6s;
 }
 
 section#ContactMe div.contact-card ul li i:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.7s;
+  -o-transition: all 0.7s;
   transition: all 0.7s;
 }
 
@@ -930,6 +1201,8 @@ section#ContactMe div.contact-card ul a:hover {
 
 section#ContactMe div.contact-card ul a span {
   font-size: 2rem;
-  transform: translateY(10px);
+  -webkit-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+          transform: translateY(10px);
 }
 /*# sourceMappingURL=style.css.map */

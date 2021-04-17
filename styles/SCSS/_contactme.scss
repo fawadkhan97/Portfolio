@@ -3,6 +3,7 @@ section#ContactMe {
   background-color: rgb(20, 20, 36);
   padding: 3rem;
   color: white;
+  width: 100%;
 
   h1 {
     color: white;
@@ -21,9 +22,16 @@ section#ContactMe {
     margin-top: 5rem;
     position: relative;
 
+
+
     @include respond(md) {
       width: 300px;
     }
+
+    @include respond(mini) {
+      width: 230px;
+    }
+
 
     img {
       height: 150px;

@@ -20,5 +20,6 @@
         }
     ],
     "liveSassCompile.settings.includeItems": [],
-    "liveSassCompile.settings.autoprefix": []
+    "liveSassCompile.settings.autoprefix": [ "> 0.5%",
+    "last 3 versions"]
 }

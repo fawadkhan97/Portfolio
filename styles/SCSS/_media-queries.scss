@@ -24,4 +24,11 @@
             @content;
         }
     }
+
+    @if $breakpoint==mini {
+        @media only screen and (max-width: 280px) {
+            @content;
+        }
+    }
+
 }
