@@ -329,7 +329,7 @@ nav#myNav #nav-hamburger.open span:nth-child(3) {
 
 @media only screen and (max-width: 400px) {
   #particles-js {
-    height: 80vh;
+    height: 100vh;
   }
 }
 
