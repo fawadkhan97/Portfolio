@@ -418,9 +418,9 @@ nav#myNav #nav-hamburger.open span:nth-child(3) {
 }
 
 #Home .Hero {
-  -webkit-transform: translateY(53vh);
-      -ms-transform: translateY(53vh);
-          transform: translateY(53vh);
+  -webkit-transform: translateY(50vh);
+      -ms-transform: translateY(50vh);
+          transform: translateY(50vh);
   position: relative;
 }
 
