@@ -19,6 +19,12 @@ nav#myNav {
     }
   }
 
+  ul.toggle-content {
+    @include respond(md) {
+      display: block;
+    }
+  }
+
   ul {
     list-style-type: none;
     margin: 0;
@@ -29,9 +35,10 @@ nav#myNav {
 
       display: none;
       position: absolute;
-      top: 65px;
+      top: 55px;
       background-color: #083346;
       width: 100%;
+
     }
 
 
@@ -180,9 +187,4 @@ nav#myNav {
 .nav-colored {
   background-color: #083346;
   transition: all 1s;
-}
-
-.toggle-content {
-  display: block !important;
-
 }

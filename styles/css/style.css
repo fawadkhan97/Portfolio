@@ -195,6 +195,12 @@ nav#myNav {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  nav#myNav ul.toggle-content {
+    display: block;
+  }
+}
+
 nav#myNav ul {
   list-style-type: none;
   margin: 0;
@@ -208,7 +214,7 @@ nav#myNav ul {
   nav#myNav ul {
     display: none;
     position: absolute;
-    top: 65px;
+    top: 55px;
     background-color: #083346;
     width: 100%;
   }
@@ -390,10 +396,6 @@ nav#myNav #nav-hamburger.open span:nth-child(3) {
   transition: all 1s;
 }
 
-.toggle-content {
-  display: block !important;
-}
-
 #particles-js {
   height: 100vh;
   background-color: #0e0e19;
@@ -416,9 +418,9 @@ nav#myNav #nav-hamburger.open span:nth-child(3) {
 }
 
 #Home .Hero {
-  -webkit-transform: translateY(50vh);
-      -ms-transform: translateY(50vh);
-          transform: translateY(50vh);
+  -webkit-transform: translateY(53vh);
+      -ms-transform: translateY(53vh);
+          transform: translateY(53vh);
   position: relative;
 }
 
