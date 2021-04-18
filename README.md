@@ -23,7 +23,8 @@
 
   2) **About** **Me**  **Section**
 
-      A wandering SVG can be seen in background SVG shape also known as 'blob' is made using https://www.blobmaker.app/  for its animation keyframes were used with transform    translate property
+      A wandering SVG can be seen in background SVG shape also known as 'blob' is made using https://www.blobmaker.app/  
+       for its animation keyframes were used with transform translate property
 
 
 
