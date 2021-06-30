@@ -27,7 +27,7 @@
        for its animation keyframes were used with transform translate property
 
 
-3)**Services** **Section**
+3) **Services** **Section**
 
    At the start of services an animated wave can be seen the wave was generated using https://getwaves.io/  for animation SVG animate property was used to animate its shape
 
