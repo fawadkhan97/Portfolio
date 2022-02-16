@@ -787,6 +787,22 @@ nav#myNav #nav-hamburger.open span:nth-child(3) {
   color: #0b8dd8;
 }
 
+#About div.skills-set div.cards i.fa-java {
+  color: #ec981a;
+}
+
+#About div.skills-set div.cards i.fa-java:hover, #About div.skills-set div.cards i.fa-java:focus, #About div.skills-set div.cards i.fa-java:active {
+  color: #ff9a02;
+}
+
+#About div.skills-set div.cards i.fa-angular {
+  color: #d11b03;
+}
+
+#About div.skills-set div.cards i.fa-angular:hover, #About div.skills-set div.cards i.fa-angular:focus, #About div.skills-set div.cards i.fa-angular:active {
+  color: #ff1010;
+}
+
 section#Services {
   padding: 5rem;
   padding-top: 1rem;
